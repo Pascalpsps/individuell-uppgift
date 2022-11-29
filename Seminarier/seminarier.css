@@ -1,0 +1,120 @@
+
+
+body {
+   height: 150vh;
+	margin: 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 0.3fr 3fr 0.3fr;
+	grid-template-areas:
+		"header"
+		"main"
+		"footer";
+}
+
+header {
+	grid-area: header;
+    background-color: aqua;
+}
+
+footer {
+	grid-area: footer;
+    background-color: aqua;
+}
+
+.inner-grid {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "heading"
+        "text-box-1 "
+        "text-box-2 "
+        "text-box-3 ";
+
+        padding-top: 2em;
+
+
+}
+
+
+
+
+
+p{
+font-size: 1.2em;
+}
+
+.heading{
+    grid-area: heading;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.text-box-1{
+    grid-area: text-box-1;
+
+
+    text-align: center;
+}
+
+.text-box-2{
+    grid-area: text-box-2;
+
+
+    text-align: center;
+
+}
+
+.text-box-3{
+    grid-area: text-box-3;
+
+
+    text-align: center;
+
+}
+
+.specification{
+    position: absolute;
+
+}
+
+.text-box-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+}
+
+
+.specification > div{
+    background-color: white;
+
+    width: 45em;
+    height: 15em;
+    padding: 1em;
+    box-shadow: 1px -1px 18px 10px rgba(0,0,0,0.22);
+    -webkit-box-shadow: 1px -1px 18px 10px rgba(0,0,0,0.22);
+    -moz-box-shadow: 1px -1px 18px 10px rgba(0,0,0,0.22);
+}
+
+summary{
+ font-weight: bold;
+ cursor: pointer;
+}
+
+summary:hover{
+    text-decoration: underline;
+   }
+
+
+   @media screen and (max-width: 600px) {
+    .specification > div{
+       width: 15em;
+       height: 25em;
+
+    }
+  }
+
