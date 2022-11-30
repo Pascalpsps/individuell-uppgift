@@ -1,0 +1,190 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    height: 250vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 7em 4fr 10em;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 0.3fr;
+    grid-template-rows: 2fr 1fr 1fr ;
+grid-template-areas:
+    " hero-img hero-img hero-img "
+    ". info-container ."
+    " image-slide image-slide image-slide"
+
+;
+   }
+
+   .hero-image{
+    grid-area: hero-img;
+    border: 1px solid black;
+    background-image: url("https://www.kth.se/polopoly_fs/1.801138.1599187063!/image/FreSed_SSCP-1219_WEB.jpg");
+   }
+
+   .info-container{
+    grid-area: info-container;
+    border: 1px solid black;
+   }
+
+   .image-slide{
+    grid-area: image-slide;
+    background-color: rgb(148, 148, 148);
+   }
+
+   
+
+header {
+   
+    grid-area: header;
+    background-color: white;
+    border-bottom: 1px solid gray;
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  align-items: center;
+ 
+}
+
+footer {
+    grid-area: footer;
+} 
+
+.header__button{
+   border: none;
+    background-color: white;
+    color: black;
+    
+ margin-right: 1em;
+    width:7em;
+    height: 3em;
+    font-size: 20px;
+    font-weight: bolder;
+   
+
+
+}
+
+.header__button:hover{
+    color: rgb(46, 86, 219);
+    cursor: pointer;
+}
+
+.header__button__main{
+    border: 2px solid rgb(46, 86, 219);
+    background-color: rgb(46, 86, 219);
+    color: white;
+    border-radius: 10em ;
+ margin-right: 1em;
+    width:8em;
+    height: 3em;
+    font-size: 20px;
+    padding: 0.4em;
+    font-weight: bolder;
+    transition: 0.3s;
+
+
+}
+
+
+
+.header__button__main:hover{
+    background-color: white;
+    color: rgb(46, 86, 219);
+    font-weight: bolder;
+    border: 2px solid rgb(46, 86, 219);
+    cursor: pointer;
+}
+
+
+
+
+.header__logo{
+  font-size: 50px;
+  font-weight: bolder;
+    margin-left: 1em;
+    color: black;
+}
+
+footer{
+    background-color: white;
+    border-top: 1px solid grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+  
+}
+
+.footer__logos > img{
+ 
+  height: 4em;
+  width: 4em;
+  margin-right:1em ;
+  transition: 0.5s;
+}
+
+.footer__text{
+    margin-left: 1em;
+}
+
+.footer__logos > img:hover{
+  cursor: pointer;
+
+}
+
+
+
+
+@media only screen and (max-width: 754px) {
+
+    header {
+        flex-direction: column;
+        justify-content: space-around;
+    
+    }
+
+    .header__logo{
+        font-size: 35px;
+       margin-left: 0;
+       
+
+      }
+
+      .header__button{ 
+      margin: 0.4em;
+      margin-bottom: 1em;
+     }
+
+
+     footer{
+      
+    flex-direction: column;
+    align-items: center;
+     }
+
+     .footer__logos > img{
+       justify-content: space-between;
+        margin-right:0 ;
+      }
+
+      .footer__text{
+        margin-left: 0;
+        text-align: center;
+    }
+
+
+
+  }
