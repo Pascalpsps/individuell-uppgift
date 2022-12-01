@@ -25,13 +25,13 @@ footer {
 .inner-grid {
     grid-area: main;
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 0.3fr 1fr 0.3fr ;
     grid-template-rows: 0.5fr 1fr 1fr 1fr;
     grid-template-areas:
-        "heading"
-        "text-box-1 "
-        "text-box-2 "
-        "text-box-3 ";
+        ". heading ."
+        ". text-box-1 . "
+        ". text-box-2 ."
+        ". text-box-3 .";
 
         padding-top: 2em;
 
@@ -75,12 +75,12 @@ font-size: 1.2em;
 
 }
 
-.specification{
+.text-box__mer-info{
     position: absolute;
 
 }
 
-.text-box-info{
+.text-box__info{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -89,24 +89,30 @@ font-size: 1.2em;
 }
 
 
-.specification > div{
+.text-box__mer-info > div{
     background-color: white;
+    z-index: 1;
 
     width: 45em;
-    height: 15em;
+    height: 10em;
     padding: 1em;
     box-shadow: 1px -1px 18px 10px rgba(0,0,0,0.22);
     -webkit-box-shadow: 1px -1px 18px 10px rgba(0,0,0,0.22);
     -moz-box-shadow: 1px -1px 18px 10px rgba(0,0,0,0.22);
 }
 
+
+
+
 summary{
  font-weight: bold;
  cursor: pointer;
+ transition: color 0.3s linear ;
+ 
 }
 
 summary:hover{
-    text-decoration: underline;
+    color: aqua;
    }
 
 
@@ -116,5 +122,23 @@ summary:hover{
        height: 25em;
 
     }
+
+    .inner-grid {
+        grid-area: main;
+        display: grid;
+        grid-template-columns:  1fr  ;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr;
+        grid-template-areas:
+            ". heading ."
+            ". text-box-1 . "
+            ". text-box-2 ."
+            ". text-box-3 .";
+    
+            padding-top: 2em;
+    
+    
+    }
+
+
   }
 
