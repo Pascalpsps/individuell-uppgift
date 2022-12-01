@@ -28,6 +28,9 @@ grid-template-areas:
    .hero-image{
     grid-area: hero-img;
     background-image: url('https://akamai.vgc.no/v2/images/e8b014e2-db48-4d53-aa16-3547bf92b0e2?fit=crop&format=auto&h=814&w=1900&s=669a6f2ad57b6893a7fe8a97bc52632a12348e45');
+
+    background-position: center;
+    background-size: cover;
   
 }
 
@@ -100,6 +103,14 @@ background: linear-gradient(90deg, rgba(93,170,255,0.6786064767703957) 0%, rgba(
    margin: 1em;
    position: relative;
    
+   }
+
+   .image-slide__img .first{
+    background-image: url('./startsida img/3272512706.jpg');
+    width: 15em;
+    height: 15em;
+    color: white;
+    background-size: cover;
    }
 
    
