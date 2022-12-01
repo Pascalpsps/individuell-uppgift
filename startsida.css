@@ -16,7 +16,7 @@ main{
     grid-area: main;
     display: grid;
     grid-template-columns: 0.3fr 1fr 0.3fr;
-    grid-template-rows: 2fr 1fr 1fr ;
+    grid-template-rows: 35em 33em 0.6fr ;
 grid-template-areas:
     " hero-img hero-img hero-img "
     ". info-container ."
@@ -27,20 +27,89 @@ grid-template-areas:
 
    .hero-image{
     grid-area: hero-img;
-    border: 1px solid black;
-    background-image: url("https://www.kth.se/polopoly_fs/1.801138.1599187063!/image/FreSed_SSCP-1219_WEB.jpg");
-   }
+    background-image: url('https://akamai.vgc.no/v2/images/e8b014e2-db48-4d53-aa16-3547bf92b0e2?fit=crop&format=auto&h=814&w=1900&s=669a6f2ad57b6893a7fe8a97bc52632a12348e45');
+  
+}
+
+.hero-image__heding{
+    color: white;
+    background: rgb(93,170,255);
+background: linear-gradient(90deg, rgba(93,170,255,0.6786064767703957) 0%, rgba(7,122,242,0.6758053563222164) 100%);
+
+padding: 1.5em;
+text-align: center;
+
+}
 
    .info-container{
     grid-area: info-container;
     border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1em;
+    
    }
+
+   .info-container__image > img{
+    width: 20em;
+    height: 15em;
+    
+    border: 9px solid rgb(93,170,255) ;
+   }
+
+   .info-container__button{
+    border: 2px solid rgb(46, 86, 219);
+    background-color: rgb(46, 86, 219);
+    color: white;
+    border-radius: 10em ;
+ margin-right: 1em;
+    width:8em;
+    height: 3em;
+    font-size: 20px;
+    padding: 0.4em;
+    font-weight: bolder;
+    transition: 0.3s;
+   }
+
+   .info-container__button:hover{
+    background-color: white;
+    color: rgb(46, 86, 219);
+    font-weight: bolder;
+    border: 2px solid rgb(46, 86, 219);
+    cursor: pointer;
+   }
+
+
+  
+  
 
    .image-slide{
     grid-area: image-slide;
-    background-color: rgb(148, 148, 148);
+    background: rgb(93,170,255);
+background: linear-gradient(90deg, rgba(93,170,255,0.6786064767703957) 0%, rgba(7,122,242,0.6758053563222164) 100%);
    }
 
+   .image-slide__img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   margin: 1em;
+   position: relative;
+   
+   }
+
+   
+
+
+  
+   .image-slide__img > img{
+     width: 15em;
+     height: 15em;
+   }
    
 
 header {
@@ -150,6 +219,20 @@ footer{
 
 @media only screen and (max-width: 754px) {
 
+
+    main{
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 0.3fr 1fr 0.3fr;
+        grid-template-rows: 35em 33em 0.6fr ;
+    grid-template-areas:
+        " hero-img hero-img hero-img "
+        "info-container info-container info-container"
+        " image-slide image-slide image-slide"
+    
+    ;
+       }
+
     header {
         flex-direction: column;
         justify-content: space-around;
@@ -184,6 +267,15 @@ footer{
         margin-left: 0;
         text-align: center;
     }
+
+    .info-container__image > img{
+        width: 15em;
+        height: 10em;
+        
+        border: 9px solid rgb(93,170,255) ;
+       }
+
+    
 
 
 
