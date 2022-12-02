@@ -25,17 +25,82 @@ footer {
 .inner-grid {
     grid-area: main;
     display: grid;
-    grid-template-columns: 0.3fr 1fr 0.3fr ;
-    grid-template-rows: 0.5fr 1fr 1fr 1fr;
+   
+    grid-template-columns: 0.3fr 1fr  0.3fr ;
+    grid-template-rows: 0.2fr 1fr 1fr 1r 0.7fr;
     grid-template-areas:
         ". heading ."
-        ". text-box-1 . "
+        ". text-box-1 ."
         ". text-box-2 ."
-        ". text-box-3 .";
+        ". text-box-3 ."
+        "img-container img-container img-container"
+        ;
 
         padding-top: 2em;
 
 
+}
+
+.Image-container{
+    grid-area: img-container;
+    background-color: grey;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+   
+    flex-wrap: wrap;
+}
+
+.image-container__img-1{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 13em;
+    height: 13em;
+    background-image: url('http://eurocloud.se/wp-content/uploads/sites/99/2018/06/1.2-1.jpg');
+}
+
+.image-container__img-1 > p{
+    color: white;
+    background-color: gray;
+    text-align: center;
+    margin-top: 10em;
+    
+   
+}
+
+.image-container__img-2{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 13em;
+    height: 13em;
+    background-image: url('http://eurocloud.se/wp-content/uploads/sites/99/2018/06/1.2-1.jpg');
+}
+
+.image-container__img-3{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 13em;
+    height: 13em;
+    background-image: url('http://eurocloud.se/wp-content/uploads/sites/99/2018/06/1.2-1.jpg');
+}
+
+.image-container__img-4{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 13em;
+    height: 13em;
+    background-image: url('http://eurocloud.se/wp-content/uploads/sites/99/2018/06/1.2-1.jpg');
+}
+
+.image-container__img-5{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 13em;
+    height: 13em;
+    background-image: url('http://eurocloud.se/wp-content/uploads/sites/99/2018/06/1.2-1.jpg');
 }
 
 
@@ -50,6 +115,7 @@ font-size: 1.2em;
     grid-area: heading;
     font-size: 1.5em;
     text-align: center;
+   
 }
 
 .text-box-1{
@@ -57,13 +123,17 @@ font-size: 1.2em;
 
 
     text-align: center;
+    border-bottom: 1px solid gray;
 }
+
+
 
 .text-box-2{
     grid-area: text-box-2;
 
 
     text-align: center;
+    border-bottom: 1px solid gray;
 
 }
 
@@ -72,67 +142,107 @@ font-size: 1.2em;
 
 
     text-align: center;
+    border-bottom: 1px solid gray;
 
 }
 
-.text-box__mer-info{
-    position: absolute;
-
-}
 
 .text-box__info{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 
 
 }
-
-
-.text-box__mer-info > div{
+a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .popup-area {
+    width: 40%;
+    margin: 0 auto;
+    padding: 0em 0em 3em;
+    text-align: center;
+  }
+  
+  .popup__content {
+    overflow: auto;
+    color: black;
+  }
+  
+  .button {
+    transition: all 0.3s ease-out;
+  }
+  
+  .button:hover {
+    color: hotpink;
+  }
+  
+  #overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 600ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  #overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
     background-color: white;
-    z-index: 1;
+  }
+  
+  .popup__content {
+    margin: 15% auto;
+    padding: 1.3em;
+    background: #fff;
+    border-radius: 0.6rem;
+    width: 15em;
+    position: relative;
+    transition: all 1s ease-in-out;
+  }
+  
+  .close {
+    display: inline-block;
+    color: black;
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+  }
+  
 
-    width: 45em;
-    height: 10em;
-    padding: 1em;
-    box-shadow: 1px -1px 18px 10px rgba(0,0,0,0.22);
-    -webkit-box-shadow: 1px -1px 18px 10px rgba(0,0,0,0.22);
-    -moz-box-shadow: 1px -1px 18px 10px rgba(0,0,0,0.22);
-}
 
 
 
 
-summary{
- font-weight: bold;
- cursor: pointer;
- transition: color 0.3s linear ;
- 
-}
 
-summary:hover{
-    color: aqua;
-   }
+
+
 
 
    @media screen and (max-width: 600px) {
-    .specification > div{
-       width: 15em;
-       height: 25em;
-
-    }
-
+   
     .inner-grid {
         grid-area: main;
         display: grid;
         grid-template-columns:  1fr  ;
-        grid-template-rows: 0.5fr 1fr 1fr 1fr;
+        grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr;
         grid-template-areas:
-            ". heading ."
-            ". text-box-1 . "
-            ". text-box-2 ."
-            ". text-box-3 .";
+            "heading"
+            "text-box-1 "
+            "text-box-2"
+            "text-box-3"
+            "img-container";
     
             padding-top: 2em;
     
