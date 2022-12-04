@@ -27,18 +27,33 @@ footer {
     display: grid;
    
     grid-template-columns: 0.3fr 1fr  0.3fr ;
-    grid-template-rows: 0.2fr 1fr 1fr 1r 0.7fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr 0.2fr 0.5fr;
     grid-template-areas:
         ". heading ."
         ". text-box-1 ."
         ". text-box-2 ."
         ". text-box-3 ."
+        ". heading-persons ."
         "img-container img-container img-container"
         ;
 
         padding-top: 2em;
 
 
+}
+
+.heading-persons{
+ 
+  grid-area: heading-persons;
+  text-align: center;
+  margin-top: 7em;
+  margin-bottom: 3em;
+ 
+}
+
+.heading-persons > hr{
+  height: 10px;
+  background-color: blue;
 }
 
 .Image-container{
@@ -59,14 +74,14 @@ footer {
     margin-bottom: 1em;
     width: 13em;
     height: 13em;
-    background-image: url('http://eurocloud.se/wp-content/uploads/sites/99/2018/06/1.2-1.jpg');
+    background-image: url('https://cdn.filestackcontent.com/xywPVuhQTuG00XQadzQX');
 }
 
-.image-container__img-1 > p{
+.image-container > div > p{
     color: white;
-    background-color: gray;
+    background-color: blue;
     text-align: center;
-    margin-top: 10em;
+    margin-top: 8em;
     
    
 }
@@ -76,15 +91,17 @@ footer {
     margin-bottom: 1em;
     width: 13em;
     height: 13em;
-    background-image: url('http://eurocloud.se/wp-content/uploads/sites/99/2018/06/1.2-1.jpg');
+    background-image: url('https://cdn.filestackcontent.com/qr52A0ekR1e6q0HsGCJG');
 }
+
+
 
 .image-container__img-3{
     margin-top: 1em;
     margin-bottom: 1em;
     width: 13em;
     height: 13em;
-    background-image: url('http://eurocloud.se/wp-content/uploads/sites/99/2018/06/1.2-1.jpg');
+    background-image: url('https://media-exp1.licdn.com/dms/image/C5103AQG9kMc7tBQzIw/profile-displayphoto-shrink_200_200/0/1516436604852?e=1674086400&v=beta&t=gJxgWCC_WPRT5tXSYluBMHBUufw-2P-PzzydLxak7v8');
 }
 
 .image-container__img-4{
@@ -92,7 +109,7 @@ footer {
     margin-bottom: 1em;
     width: 13em;
     height: 13em;
-    background-image: url('http://eurocloud.se/wp-content/uploads/sites/99/2018/06/1.2-1.jpg');
+    background-image: url('https://cdn.filestackcontent.com/inJ2ujTY6u0Gh3Mxxq4A');
 }
 
 .image-container__img-5{
@@ -100,7 +117,7 @@ footer {
     margin-bottom: 1em;
     width: 13em;
     height: 13em;
-    background-image: url('http://eurocloud.se/wp-content/uploads/sites/99/2018/06/1.2-1.jpg');
+    background-image: url('https://cdn.filestackcontent.com/sNmfs2jRlyCKF9oTYt6v');
 }
 
 
@@ -115,7 +132,13 @@ font-size: 1.2em;
     grid-area: heading;
     font-size: 1.5em;
     text-align: center;
+    border-bottom: 10px solid blue;
    
+}
+
+.heading > p{
+
+  font-size: 0.9em;
 }
 
 .text-box-1{
@@ -236,13 +259,15 @@ a {
         grid-area: main;
         display: grid;
         grid-template-columns:  1fr  ;
-        grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+        grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.1fr 0.5fr;
         grid-template-areas:
             "heading"
             "text-box-1 "
             "text-box-2"
             "text-box-3"
-            "img-container";
+            "heading-persons"
+            "img-container"
+            ;
     
             padding-top: 2em;
     
