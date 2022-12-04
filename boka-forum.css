@@ -68,12 +68,17 @@ input:valid{
 
 
 .error-messeage{
-  
- color: rgb(145, 43, 43);
+    
+    color: rgb(145, 43, 43);
 }
 
-input:invalid > .error-messeage{
+input:invalid + .error-messeage{
     visibility: visible;
+    
+}
+
+input:valid + .error-messeage{
+    visibility: hidden;
 }
 
 
