@@ -1,0 +1,140 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="boka-forum.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>header</header>
+    <main>
+
+        <section class="form">
+
+
+     <section class="heading-form">
+      <h1>Boka seminarie</h1>
+      
+     </section>
+
+     <form action="#">
+
+     <section class="form-personal-data">
+
+        <h2 class="form-personal-data__heading"> Person uppgifter:</h2>
+
+        <div class="form-personal-data__input">
+
+             <div class="form-personal-data__flex">
+            <label for="name">Namn:</label>
+            <input type="name" placeholder="John Smith" name="namn" required>
+            <p class="error-messeage">Var vänligen att skriv in ditt namn</p>
+            <br>
+        </div>
+
+        <div class="form-personal-data__flex">
+
+            <label for="email">Email:</label>
+            <input type="email" placeholder="John.Smith@gmail.com" name="epost" required>
+            <p class="error-messeage">Var vänligen att skriv in din email</p>
+            <br>
+        </div>
+
+        <div class="form-personal-data__flex">
+            <label for="nummer">Mobilnummer:</label>
+            <input type="nummer" placeholder="070568890 " name="nummer" minlength="8" maxlength="16" required>
+            <p class="error-messeage">Var vänligen att skriv in ditt telefonummer</p>
+            <br>
+        </div>
+
+            
+
+        </div>
+
+     </section>
+     <br>
+     <section class="form-food">
+
+        <h2 class="form-food__heading"> Mat och allergier</h2>
+
+        <div class="form-food__input">
+
+          
+            <input type="radio" id="food1" name="food" value="fisk" required>
+            <label for="food1">Fisk</label><br>
+           
+       
+
+       
+            <input type="radio" id="food2" name="food" value="kött">
+            <label for="food2">Kött</label><br>
+            
+       
+
+           
+            <input type="radio" id="food3" name="food" value="vegitariskt">
+            <label for="food3">Vego </label><br><br>
+            
+            
+        
+            
+       
+
+          <div class="form-food__input-2">
+            <p class="form-food__special-food-heading">Vänligen skriv dina allergier här:</p>
+            <textarea name="message" rows="10" cols="30"></textarea>
+          </div>
+          </div>
+          
+
+    </section>
+      <br>
+    <section class="form-ticket">
+        <h2>Biljetter för seminariet</h2>
+     
+        <div class="form-ticket__input">
+
+           
+            <input type="radio" id="ticket1" name="ticket" value="Biljett för: 9/12 (200kr)" required>
+            <label for="ticket1"> Biljett för: 9/12 (200kr)</label><br>
+        
+        
+            <input type="radio" id="ticket2" name="ticket" value="Biljett för: 10/12 (200kr)">
+            <label for="ticket2"> Biljett för: 10/12 (200kr)</label><br>
+       
+        
+        
+            <input type="radio" id="ticket3" name="ticket" value="Biljett för: 11/12 (250kr)">
+            <label for="ticket3"> Biljett för: 11/12 (250kr)</label><br><br>
+       
+
+          
+            <input type="radio" id="ticket4" name="ticket" value="Biljett för hela seminariet: (500kr)">
+            <label for="ticket4"> Biljett för hela seminariet: (500kr)</label><br><br>
+        
+            
+        
+            
+        </div> 
+
+       
+            
+        <button type="submit"> Beställ</button>
+
+       </form>
+
+    </section>
+
+
+
+
+
+</section>
+
+
+    </main>
+    <footer>footer</footer>
+    
+</body>
+</html>

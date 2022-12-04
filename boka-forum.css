@@ -1,0 +1,187 @@
+body {
+	margin: 0;
+	display: grid;
+    height: 150vh;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 3fr 1fr;
+	grid-template-areas:
+		"header"
+		"main"
+		"footer";
+}
+
+
+
+
+header{
+    grid-area: header;
+    background-color: aqua;
+}
+
+main{
+    grid-area:main;
+}
+
+footer{
+    grid-area: footer;
+    background-color: aqua;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 0.3fr 1fr 0.3fr;
+	grid-template-rows: 1fr ;
+	grid-template-areas:
+		". form ."
+		
+		;
+	
+    
+}
+
+.form{
+    grid-area: form;
+   
+}
+
+.form > *{
+margin: 2em;
+}
+
+input:invalid{
+    outline: 2px solid red 
+    
+   
+}
+
+
+
+
+
+
+input:valid{
+    border-bottom: 5px solid green;
+}
+
+
+
+
+
+
+
+.error-messeage{
+    
+    color: rgb(145, 43, 43);
+}
+
+input:invalid + .error-messeage{
+    visibility: visible;
+    
+}
+
+input:valid + .error-messeage{
+    visibility: hidden;
+}
+
+
+
+
+
+.heading-form{
+    grid-area: heading-form;
+   
+    text-align: center;
+   align-self: center;
+   border-bottom: 0.7em solid blue;
+  margin: 0;
+  margin-left: 32px;
+  margin-right: 32px;
+   font-size: 1.7em;
+    
+    
+}
+
+
+.form-personal-data{
+    grid-area:  form-personal-data ;
+    border: 1px solid black;
+    text-align: center;
+    background-color: lightblue;
+    
+}
+
+.form-personal-data__flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1em;
+    
+    
+}
+
+
+
+.form-personal-data__flex >input{
+    width: 30em;
+   height: 3em;
+   transition: 0.5s;
+   
+}
+
+.form-personal-data__flex >input:hover{
+    box-shadow: 1em 0.3em 1em 0.1em gray;
+    
+}
+
+
+.form-food{
+    grid-area: form-food;
+    border: 1px solid black;
+    text-align: center;
+    background-color: lightblue;
+    
+}
+
+.form-food > *{
+    margin-bottom: 1em;
+}
+
+.form-food__input-2{
+    font-weight: bold;
+}
+
+
+
+.form-ticket{
+    grid-area: form-ticket;
+    border: 1px solid black;
+    text-align: center;
+    background-color: lightblue;
+}
+
+
+
+.form-ticket > *{
+    margin-bottom: 1em;
+}
+
+
+@media only screen and (max-width: 800px){
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "form"
+            
+            ;
+        
+        
+    }
+
+
+    .form-personal-data__flex >input{
+        width: 18em;
+       height: 3em;
+       transition: 0.5s;
+       
+    }
+}
