@@ -1,5 +1,5 @@
 body {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     height: 250vh;
     display: grid;
@@ -65,7 +65,7 @@ text-align: center;
    .info-container__image > img{
     width: 20em;
     height: 15em;
-    
+    border-radius: 0.6em;
     border: 9px solid rgb(93,170,255) ;
    }
 
@@ -76,7 +76,7 @@ text-align: center;
     border-radius: 10em ;
  margin-right: 1em;
     width:8em;
-    height: 3em;
+    height: 2.5em;
     font-size: 20px;
     padding: 0.4em;
     font-weight: bolder;
@@ -109,6 +109,7 @@ background: linear-gradient(90deg, rgba(93,170,255,0.6786064767703957) 0%, rgba(
     justify-content: space-around;
     flex-wrap: wrap;
    margin: 1em;
+   
    position: relative;
    
    }
@@ -120,6 +121,7 @@ background: linear-gradient(90deg, rgba(93,170,255,0.6786064767703957) 0%, rgba(
     color: white;
     background-size: cover;
     text-align: center;
+    border-radius: 0.6em;
     transition: 0.3s;
    }
 
@@ -130,6 +132,7 @@ background: linear-gradient(90deg, rgba(93,170,255,0.6786064767703957) 0%, rgba(
     color: white;
     background-size: cover;
     text-align: center;
+    border-radius: 0.6em;
     transition: 0.3s;
    }
 
@@ -140,6 +143,7 @@ background: linear-gradient(90deg, rgba(93,170,255,0.6786064767703957) 0%, rgba(
     color: white;
     background-size: cover;
     text-align: center;
+    border-radius: 0.6em;
     transition: 0.3s;
     
     
@@ -203,10 +207,10 @@ footer {
     background-color: white;
     color: black;
     
- margin-right: 1em;
+ margin-right: 0em;
     width:7em;
     height: 3em;
-    font-size: 20px;
+    font-size: 1.1em;
     font-weight: bolder;
    
 
@@ -224,10 +228,10 @@ footer {
     color: white;
     border-radius: 10em ;
  margin-right: 1em;
-    width:8em;
+    width:6em;
     height: 3em;
-    font-size: 20px;
-    padding: 0.4em;
+    font-size: 1.1em;
+   
     font-weight: bolder;
     transition: 0.3s;
 
@@ -284,6 +288,23 @@ footer{
 }
 
 
+@media only screen and (max-width: 910px) and (min-width: 754px){
+  
+
+       .info-container{
+        
+       
+        display: flex;
+        flex-direction: column;
+        
+        
+      
+  
+       }
+
+}
+
+
 
 
 @media only screen and (max-width: 754px) {
@@ -316,9 +337,35 @@ footer{
       }
 
       .header__button{ 
-      margin: 0.4em;
-      margin-bottom: 1em;
+      
+      margin-bottom: 0em;
+      width:5.5em;
+      height: 2.5em;
      }
+
+     .header__button__main{
+     
+    
+     
+     width:5.5em;
+     height: 2.5em;
+    
+    
+    }
+
+    .header__button{
+        border: none;
+         background-color: white;
+         color: black;
+         
+     
+       
+        
+     
+     
+     }
+
+     
 
 
      footer{
@@ -346,7 +393,8 @@ footer{
 
        .info-container{
         gap: 0em;
-        
+        display: flex;
+        flex-direction: column;
        }
 
     

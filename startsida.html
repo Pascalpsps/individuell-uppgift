@@ -8,15 +8,16 @@
 </head>
 <body>
     <header>
-        <div class="header__logo"> Bättre webb. </div>
+       
+        <div onclick="window.location.href = 'http://127.0.0.1:5500/startsida.html'" class="header__logo"> Bättre webb. </div>
         <div>
-           
-        <a class="header__button__main">Boka nu</a>
-        <a class="header__button">Seminarier</a>
-        <a class="header__button">Om oss</a>
+        <button onclick="window.location.href = 'http://127.0.0.1:5500/boka-forum.html'" class="header__button__main">Boka nu</button>
+        <button onclick="window.location.href = 'http://127.0.0.1:5500/seminarier.html'" class="header__button">Seminarier</button>
+        <button onclick="window.location.href = 'http://127.0.0.1:5500/startsida.html'" class="header__button">Startsida</button>
+      
     </header>
 
-
+  
     <main>
         <section class="hero-image">
         
@@ -32,7 +33,7 @@
         <div class="info-container__text ">
           <p>Anmäl dig till våra seminarier i karlstad mellan 9/12 - 12/12</p>
 
-          <button class="info-container__button">Boka nu</button>
+          <button onclick="window.location.href = 'http://127.0.0.1:5500/boka-forum.html'" class="info-container__button">Boka nu</button>
             </div> 
 
         <div class="info-container__image">
@@ -43,16 +44,16 @@
     <section class="image-slide">
        <div class="image-slide__img">
 
-        <div class="image-slide__img image-slide__text first">
+        <div tabindex="1" class="image-slide__img image-slide__text first">
           <p>Få mer kunskap inom programering</p>
          
         </div>
 
-        <div class="image-slide__img image-slide__text second">
+        <div tabindex="2" class="image-slide__img image-slide__text second">
           <p>Få hjälp och tips inom programering av proffsen</p>
         </div>
     
-        <div class="image-slide__img image-slide__text third">
+        <div tabindex="3"  class="image-slide__img image-slide__text third">
           <p>Lär dig programera som ett riktigt proffs</p>
         </div>
        

@@ -1,21 +1,21 @@
 
 
 body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
    height: 150vh;
 	margin: 0;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 0.3fr 3fr 0.3fr;
+	grid-template-rows: 7em 3fr 10em;
 	grid-template-areas:
 		"header"
 		"main"
 		"footer";
 }
 
-header {
-	grid-area: header;
-    background-color: aqua;
-}
+
+
+
 
 footer {
 	grid-area: footer;
@@ -53,12 +53,13 @@ footer {
 
 .heading-persons > hr{
   height: 10px;
-  background-color: blue;
+  background-color: rgb(46, 86, 219);
 }
 
 .Image-container{
     grid-area: img-container;
-    background-color: grey;
+    background: rgb(93,170,255);
+background: linear-gradient(90deg, rgba(93,170,255,0.6786064767703957) 0%, rgba(7,122,242,0.6758053563222164) 100%);
 
     display: flex;
     flex-direction: row;
@@ -72,6 +73,7 @@ footer {
 .image-container__img-1{
     margin-top: 1em;
     margin-bottom: 1em;
+    border-radius: 0.6em;
     width: 13em;
     height: 13em;
     background-image: url('https://cdn.filestackcontent.com/xywPVuhQTuG00XQadzQX');
@@ -79,7 +81,7 @@ footer {
 
 .image-container > div > p{
     color: white;
-    background-color: blue;
+    background-color: rgb(46, 86, 219);
     text-align: center;
     margin-top: 8em;
     
@@ -89,6 +91,7 @@ footer {
 .image-container__img-2{
     margin-top: 1em;
     margin-bottom: 1em;
+    border-radius: 0.6em;
     width: 13em;
     height: 13em;
     background-image: url('https://cdn.filestackcontent.com/qr52A0ekR1e6q0HsGCJG');
@@ -99,6 +102,7 @@ footer {
 .image-container__img-3{
     margin-top: 1em;
     margin-bottom: 1em;
+    border-radius: 0.6em;
     width: 13em;
     height: 13em;
     background-image: url('https://media-exp1.licdn.com/dms/image/C5103AQG9kMc7tBQzIw/profile-displayphoto-shrink_200_200/0/1516436604852?e=1674086400&v=beta&t=gJxgWCC_WPRT5tXSYluBMHBUufw-2P-PzzydLxak7v8');
@@ -107,6 +111,7 @@ footer {
 .image-container__img-4{
     margin-top: 1em;
     margin-bottom: 1em;
+    border-radius: 0.6em;
     width: 13em;
     height: 13em;
     background-image: url('https://cdn.filestackcontent.com/inJ2ujTY6u0Gh3Mxxq4A');
@@ -115,9 +120,16 @@ footer {
 .image-container__img-5{
     margin-top: 1em;
     margin-bottom: 1em;
+    border-radius: 0.6em;
     width: 13em;
     height: 13em;
     background-image: url('https://cdn.filestackcontent.com/sNmfs2jRlyCKF9oTYt6v');
+
+}
+
+
+.image-container__img--highlighted:hover{
+  box-shadow: 0em 0em 0.7em 0.5px rgb(78, 78, 78)
 }
 
 
@@ -132,7 +144,7 @@ font-size: 1.2em;
     grid-area: heading;
     font-size: 1.5em;
     text-align: center;
-    border-bottom: 10px solid blue;
+    border-bottom: 10px solid rgb(46, 86, 219);
    
 }
 

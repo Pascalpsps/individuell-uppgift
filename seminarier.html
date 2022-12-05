@@ -6,15 +6,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bättre webb</title>
 	<link rel="stylesheet" href="./seminarier.css">
+  <link rel="stylesheet" href="header.css">
 	
 </head>
 
 <body>
 
-	<header>
-<h1>header</h1>
-
-	</header>
+  <header>
+       
+    <div onclick="window.location.href = 'http://127.0.0.1:5500/startsida.html'" class="header__logo"> Bättre webb. </div>
+    <div>
+    <button onclick="window.location.href = 'http://127.0.0.1:5500/boka-forum.html'" class="header__button__main">Boka nu</button>
+    <button onclick="window.location.href = 'http://127.0.0.1:5500/seminarier.html'" class="header__button">Seminarier</button>
+    <button onclick="window.location.href = 'http://127.0.0.1:5500/startsida.html'" class="header__button">Startsida</button>
+  
+</header>
 
     <main class="inner-grid">
 
@@ -26,28 +32,28 @@
         <section class="Image-container">
 
           
-        <div class="image-container__img-1">
+        <div class="image-container__img-1 image-container__img--highlighted">
             <p>Jimmy Grugor
               <br>
               Javascript
             </p>
         </div> 
 
-        <div class="image-container__img-2">
+        <div class="image-container__img-2 image-container__img--highlighted">
           <p>Josefine Smith
             <br>
             Html
           </p>
         </div>
 
-        <div class="image-container__img-3">
+        <div class="image-container__img-3 image-container__img--highlighted">
           <p>Ann Sylvester
             <br>
             Javascript
           </p>
         </div>
 
-        <div class="image-container__img-4">
+        <div class="image-container__img-4 image-container__img--highlighted">
           <p>Chris Hemfer
             <br>
             Css
@@ -56,7 +62,7 @@
           
         </div>
 
-        <div class="image-container__img-5">
+        <div class="image-container__img-5 image-container__img--highlighted">
           <p>Steve Grabbson
             <br>
             Html
