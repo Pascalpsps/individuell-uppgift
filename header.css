@@ -84,8 +84,12 @@ header {
   font-weight: bolder;
     margin-left: 1em;
     color: black;
+    
 }
 
+.header__logo:hover{
+    cursor: pointer;
+}
 
 
 
