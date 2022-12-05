@@ -6,7 +6,7 @@ body {
 	margin: 0;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 7em 3fr 12em;
+	grid-template-rows: 7em 3fr 15em;
 	grid-template-areas:
 		"header"
 		"main"
@@ -17,10 +17,7 @@ body {
 
 
 
-footer {
-	grid-area: footer;
-    background-color: aqua;
-}
+
 
 .inner-grid {
     grid-area: main;
@@ -65,7 +62,7 @@ background: linear-gradient(90deg, rgba(93,170,255,0.6786064767703957) 0%, rgba(
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 1em;
+   
    
     flex-wrap: wrap;
 }
@@ -79,7 +76,7 @@ background: linear-gradient(90deg, rgba(93,170,255,0.6786064767703957) 0%, rgba(
     background-image: url('https://cdn.filestackcontent.com/xywPVuhQTuG00XQadzQX');
 }
 
-.image-container > div > p{
+.image-container > figure > p{
     color: white;
     background-color: rgb(46, 86, 219);
     text-align: center;
@@ -133,12 +130,6 @@ background: linear-gradient(90deg, rgba(93,170,255,0.6786064767703957) 0%, rgba(
 }
 
 
-
-
-
-p{
-font-size: 1.2em;
-}
 
 .heading{
  

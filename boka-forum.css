@@ -4,7 +4,7 @@ body {
 	display: grid;
     height: 150vh;
 	grid-template-columns: 1fr;
-	grid-template-rows: 7em 3fr 12em;
+	grid-template-rows: 7em 3fr 15em;
 	grid-template-areas:
 		"header"
 		"main"
@@ -23,10 +23,7 @@ main{
     grid-area:main;
 }
 
-footer{
-    grid-area: footer;
-    background-color: aqua;
-}
+
 
 main {
 	display: grid;
@@ -114,6 +111,11 @@ border-radius: 0.5em;
     
 }
 
+input{
+    font-size: 0.8em;
+    margin-top: 0.2em;
+}
+
 .form-personal-data__flex{
     display: flex;
     flex-direction: column;
@@ -129,12 +131,12 @@ border-radius: 0.5em;
 .form-personal-data__flex >input{
     width: 30em;
    height: 3em;
-   transition: 0.5s;
+   transition: 0.3s;
    
 }
 
 .form-personal-data__flex >input:hover{
-    box-shadow: 1em 0.3em 1em 0.1em gray;
+    box-shadow: 0em 0em 0.7em 0.5px rgb(97, 97, 97);
     
 }
 
@@ -152,8 +154,17 @@ border-radius: 0.5em;
     margin-bottom: 1em;
 }
 
-.form-food__input-2{
+.form-food__special-food-heading{
     font-weight: bold;
+}
+
+.form-food >input{
+    font-size: 1em;
+}
+
+.form-food > label{
+    font-size: 1.2em;
+   
 }
 
 
@@ -171,6 +182,10 @@ border-radius: 0.5em;
 
 .form-ticket > *{
     margin-bottom: 1em;
+}
+
+.form-ticket > label{
+    font-size: 1.2em;
 }
 
 

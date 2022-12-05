@@ -4,7 +4,7 @@ body {
     height: 250vh;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 7em 4fr 12em;
+    grid-template-rows: 7em 4fr 15em;
     grid-template-areas:
         "header"
         "main"
@@ -102,13 +102,13 @@ text-align: center;
   
   
 
-   .image-slide{
+   .image-container{
     grid-area: image-slide;
     background: rgb(93,170,255);
 background: linear-gradient(90deg, rgba(93,170,255,0.6786064767703957) 0%, rgba(7,122,242,0.6758053563222164) 100%);
    }
 
-   .image-slide__img{
+   .image-container__img{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -119,7 +119,7 @@ background: linear-gradient(90deg, rgba(93,170,255,0.6786064767703957) 0%, rgba(
    
    }
 
-   .image-slide__img .first{
+   .image-container__img .first{
     background-image: url('./startsida img/3272512706.jpg');
     width: 15em;
     height: 15em;
@@ -130,7 +130,7 @@ background: linear-gradient(90deg, rgba(93,170,255,0.6786064767703957) 0%, rgba(
     transition: 0.3s;
    }
 
-   .image-slide__img .second{
+   .image-container__img .second{
     background-image: url('./startsida img/491239_1280.jpg');
     width: 15em;
     height: 15em;
@@ -141,7 +141,7 @@ background: linear-gradient(90deg, rgba(93,170,255,0.6786064767703957) 0%, rgba(
     transition: 0.3s;
    }
 
-   .image-slide__img .third{
+   .image-container__img .third{
     background-image: url('./startsida img/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.webp');
     width: 15em;
     height: 15em;
@@ -154,24 +154,17 @@ background: linear-gradient(90deg, rgba(93,170,255,0.6786064767703957) 0%, rgba(
     
    }
 
-   .first:hover{
-    box-shadow: 0em 0em 0.7em 0.5px rgb(78, 78, 78) ;
-    
-   }
+   
 
-  .second:hover{
+   .image-container__img--highlighted:hover{
     box-shadow: 0em 0em 0.7em 0.5px rgb(78, 78, 78) ;
-   }
-
-   .third:hover{
-    box-shadow: 0em 0em 0.7em 0.5px rgb(78, 78, 78) ;
-   }
+   } 
 
   
 
 
 
-   .image-slide__img > p{
+   .image-container__img > p{
 background-color: rgb(46, 86, 219);
 
 height: 3em;
@@ -183,7 +176,7 @@ height: 3em;
 
 
   
-   .image-slide__img > img{
+   .image-container__img > img{
      width: 15em;
      height: 15em;
    }
