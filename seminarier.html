@@ -1,315 +1,347 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Bättre webb</title>
-	<link rel="stylesheet" href="./seminarier.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bättre webb</title>
+  <link rel="stylesheet" href="./seminarier.css">
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="footer.css">
-	
+
 </head>
 
 <body>
 
   <header>
-       
-    <div onclick="window.location.href = 'http://127.0.0.1:5500/startsida.html'" class="header__logo"> Bättre webb. </div>
-    <div>
-    <button onclick="window.location.href = 'http://127.0.0.1:5500/boka-forum.html'" class="header__button__main">Boka nu</button>
-    <button onclick="window.location.href = 'http://127.0.0.1:5500/seminarier.html'" class="header__button">Seminarier</button>
-    <button onclick="window.location.href = 'http://127.0.0.1:5500/startsida.html'" class="header__button">Startsida</button>
-  
-</header>
 
-    <main class="inner-grid">
+    <div onclick="window.location.href = 'http://127.0.0.1:5500/startsida.html'" class="header__logo"> Bättre webb.
+    </div>
+    <div class="header__grouped-buttons">
+      <button onclick="window.location.href = 'http://127.0.0.1:5500/boka-forum.html'" class="header__button__main">Boka
+        nu</button>
+      <button onclick="window.location.href = 'http://127.0.0.1:5500/seminarier.html'"
+        class="header__button">Seminarier</button>
+      <button onclick="window.location.href = 'http://127.0.0.1:5500/startsida.html'"
+        class="header__button">Startsida</button>
+    </div>
+  </header>
 
-      <section class="heading-persons">
+  <main class="inner-grid">
 
-        
-        <h1> Några av de personer som kommer hålla föredrag på kongressen</h1>
-        <hr>
-      </section>
+   
 
-        <section class="Image-container">
 
-          
-        <figure class="image-container__img-1 image-container__img--highlighted" alt="Jimmy Grugor" >
-            <p>Jimmy Grugor
-              <br>
-              Javascript
-            </p>
-          </figure> 
 
-        <figure class="image-container__img-2 image-container__img--highlighted" alt="Josefine Smith">
-          <p>Josefine Smith
-            <br>
-            Html
-          </p>
-        </figure>
+    <section class="heading">
 
-        <figure class="image-container__img-3 image-container__img--highlighted" alt="Ann Sylvester">
-          <p>Ann Sylvester
-            <br>
-            Javascript
-          </p>
-        </figure>
 
-        <figure class="image-container__img-4 image-container__img--highlighted" alt="Chris Hemfer">
-          <p>Chris Hemfer
-            <br>
-            Css
-          </p>
-          
-          
-        </figure>
+      <article class="heading__text">
+        <h1> Datum och tider för konferansena</h1>
+      </article>
 
-        <figure class="image-container__img-5 image-container__img--highlighted" alt="Steve Grabbson">
-          <p>Steve Grabbson
-            <br>
-            Html
-          </p>
-        </figure>
-            
+      <hr>
+
+      <article class="heading__more-text">
+        <p> Konfernasen äger rum i karlstad mellan den 9/11 - 12/11 </p>
+        <p>Plats: Karlstad CCC <u> Tage Erlandergatan 8, 652 20 Karlstad </u></p>
+      </article>
+
+    </section>
+
+
+
+    <article class="text-box-1">
+      <h2>9/11 - Html</h2>
+
+      <div class="text-box__info">
+        <p> Klockan 10:00-11:00 Introduktion av Html med Steve Grabbson</p>
+
+        <section class="popup-area">
+          <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
+              viewBox="0 0 7 13" fill="none">
+              <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
+            </svg> Mer info</a>
         </section>
 
-     
-
-        <section class="heading">
-
-          
-          <article class="heading__text">
-         <h1>  Datum och tider för konferansena</h1>
-         <p> Konfernasen äger rum i karlstad mellan den 9/11 - 12/11 </p>
-         <p>Plats: Karlstad CCC <u> Tage Erlandergatan 8, 652 20 Karlstad </u></p>
+        <section class="popup" id="overlay">
+          <article class="popup__content">
+            <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
+            <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant
+              vel non. Arcu eget eget et et semper dictumst velit.</p>
           </article>
-     
         </section>
 
-       
-     
-         <article class="text-box-1">
-             <h2>9/11 - Html</h2>
-     
-             <div class="text-box__info">
-             <p> Klockan 10:00-11:00 Introduktion av Html med Steve Grabbson</p>
+      </div>
 
-             <section class="popup-area">
-                <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none">
-                    <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
-                  </svg> Mer info</a>
-              </section>
+      <div class="text-box__info">
+        <p> Klockan 12:30-14:00 Möjligheter med Html med Josefine Smith</p>
 
-              <section class="popup" id="overlay">
-                <article class="popup__content">
-                  <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
-                  <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant vel non. Arcu eget eget et et semper dictumst velit.</p>
-                </article>
-              </section>
-             
-         </div>
-     
-         <div class="text-box__info">
-             <p> Klockan 12:30-14:00 Möjligheter med Html med Josefine Smith</p>
+        <section class="popup-area">
+          <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
+              viewBox="0 0 7 13" fill="none">
+              <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
+            </svg> Mer info</a>
+        </section>
 
-             <section class="popup-area">
-                <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none">
-                    <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
-                  </svg> Mer info</a>
-              </section>
-              
-              <section class="popup" id="overlay">
-                <article class="popup__content">
-                  <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
-                  <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant vel non. Arcu eget eget et et semper dictumst velit.</p>
-                </article>
-              </section>
-             
-         </div>
-     
-         <div class="text-box__info">
-             <p> Klockan 14:20-17:20 En värld av Html med Steve Mcgreen</p>
+        <section class="popup" id="overlay">
+          <article class="popup__content">
+            <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
+            <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant
+              vel non. Arcu eget eget et et semper dictumst velit.</p>
+          </article>
+        </section>
 
-             <section class="popup-area">
-                <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none">
-                    <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
-                  </svg> Mer info</a>
-              </section>
-              
-              <section class="popup" id="overlay">
-                <article class="popup__content">
-                  <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
-                  <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant vel non. Arcu eget eget et et semper dictumst velit.</p>
-                </article>
-              </section>
-            
-         </div>
-     
-     
-             
-         </article>
+      </div>
 
-        
-         
-     
-         <article class="text-box-2">
-             <h2>10/11 - Css</h2>
-     
-             <div class="text-box__info">
-                 <p> Klockan 09:00-10:30 Styla Css som ett proffs med Lee Hansen</p>
-                
-                 <section class="popup-area">
-                    <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none">
-                        <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
-                      </svg> Mer info</a>
-                  </section>
-                  
-                  <section class="popup" id="overlay">
-                    <article class="popup__content">
-                      <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
-                      <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant vel non. Arcu eget eget et et semper dictumst velit.</p>
-                    </article>
-                  </section>
-             </div>
-     
-             <div class="text-box__info">
-                 <p>Klockan 12:20-15:00 Förjupning av Css med Chris Hemfer</p>
-                 <section class="popup-area">
-                    <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none">
-                        <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
-                      </svg> Mer info</a>
-                  </section>
-                  
-                  <section class="popup" id="overlay">
-                    <article class="popup__content">
-                      <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
-                      <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant vel non. Arcu eget eget et et semper dictumst velit.</p>
-                    </article>
-                  </section>
-             </div>
-     
-             <div class="text-box__info">
-                 <p>Klockan 14:20-17:20 Tänk nytt med Css med Harvy Tank</p>
-                 <section class="popup-area">
-                    <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none">
-                        <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
-                      </svg> Mer info</a>
-                  </section>
-                  
-                  <section class="popup" id="overlay">
-                    <article class="popup__content">
-                      <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
-                      <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant vel non. Arcu eget eget et et semper dictumst velit.</p>
-                    </article>
-                  </section>
-             </div>
-             
-             
-         </article>
-         
-     
-     
-         <article class="text-box-3">
-             <h2>11/11 - Javascript</h2>
-     
-             <div class="text-box__info">
-                 <p> Klockan 8:30-10:00 Hur använder man Javascript med Swee Jao</p>
-                 <section class="popup-area">
-                    <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none">
-                        <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
-                      </svg> Mer info</a>
-                  </section>
-                  
-                  <section class="popup" id="overlay">
-                    <article class="popup__content">
-                      <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
-                      <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant vel non. Arcu eget eget et et semper dictumst velit.</p>
-                    </article>
-                  </section>
-             </div>
-     
-             <div class="text-box__info">
-                 <p>Klockan 10:30-11:15 Bygg fantastiska grejer med Javascript Jimmy Grugor</p>
-                 <section class="popup-area">
-                    <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none">
-                        <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
-                      </svg> Mer info</a>
-                  </section>
-                  
-                  <section class="popup" id="overlay">
-                    <article class="popup__content">
-                      <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
-                      <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant vel non. Arcu eget eget et et semper dictumst velit.</p>
-                    </article>
-                  </section>
-             </div>
-     
-             <div class="text-box__info">
-                 <p>Klockan 14:00-15:20 Allt du behöver veta om Javascript med Ann Sylvester</p>
-                 <section class="popup-area">
-                    <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none">
-                        <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
-                      </svg> Mer info</a>
-                  </section>
-                  
-                  <section class="popup" id="overlay">
-                    <article class="popup__content">
-                      <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
-                      <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant vel non. Arcu eget eget et et semper dictumst velit.</p>
-                    </article>
-                  </section>
-             </div>
-     
-             <div class="text-box__info">
-                 <p>Klockan 15:40-17:20 Det nya som kommer hända med Javascript med Tiffany Fox</p>
-                 <section class="popup-area">
-                    <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13" viewBox="0 0 7 13" fill="none">
-                        <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
-                      </svg> Mer info</a>
-                  </section>
-                  
-                  <section class="popup" id="overlay">
-                    <article class="popup__content">
-                      <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
-                      <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant vel non. Arcu eget eget et et semper dictumst velit.</p>
-                    </article>
-                  </section>
-             </div>
-     
-             
-            
-             
-             
-            
-         </article>
-         
-     
-     </main>
+      <div class="text-box__info">
+        <p> Klockan 14:20-17:20 En värld av Html med Steve Mcgreen</p>
 
-     <footer>
+        <section class="popup-area">
+          <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
+              viewBox="0 0 7 13" fill="none">
+              <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
+            </svg> Mer info</a>
+        </section>
 
-      <article class="footer__text">
+        <section class="popup" id="overlay">
+          <article class="popup__content">
+            <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
+            <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant
+              vel non. Arcu eget eget et et semper dictumst velit.</p>
+          </article>
+        </section>
+
+      </div>
+
+
+
+    </article>
+
+
+
+
+    <article class="text-box-2">
+      <h2>10/11 - Css</h2>
+
+      <div class="text-box__info">
+        <p> Klockan 09:00-10:30 Styla Css som ett proffs med Lee Hansen</p>
+
+        <section class="popup-area">
+          <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
+              viewBox="0 0 7 13" fill="none">
+              <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
+            </svg> Mer info</a>
+        </section>
+
+        <section class="popup" id="overlay">
+          <article class="popup__content">
+            <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
+            <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant
+              vel non. Arcu eget eget et et semper dictumst velit.</p>
+          </article>
+        </section>
+      </div>
+
+      <div class="text-box__info">
+        <p>Klockan 12:20-15:00 Förjupning av Css med Chris Hemfer</p>
+        <section class="popup-area">
+          <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
+              viewBox="0 0 7 13" fill="none">
+              <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
+            </svg> Mer info</a>
+        </section>
+
+        <section class="popup" id="overlay">
+          <article class="popup__content">
+            <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
+            <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant
+              vel non. Arcu eget eget et et semper dictumst velit.</p>
+          </article>
+        </section>
+      </div>
+
+      <div class="text-box__info">
+        <p>Klockan 14:20-17:20 Tänk nytt med Css med Harvy Tank</p>
+        <section class="popup-area">
+          <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
+              viewBox="0 0 7 13" fill="none">
+              <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
+            </svg> Mer info</a>
+        </section>
+
+        <section class="popup" id="overlay">
+          <article class="popup__content">
+            <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
+            <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant
+              vel non. Arcu eget eget et et semper dictumst velit.</p>
+          </article>
+        </section>
+      </div>
+
+
+    </article>
+
+
+
+    <article class="text-box-3">
+      <h2>11/11 - Javascript</h2>
+
+      <div class="text-box__info">
+        <p> Klockan 8:30-10:00 Hur använder man Javascript med Swee Jao</p>
+        <section class="popup-area">
+          <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
+              viewBox="0 0 7 13" fill="none">
+              <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
+            </svg> Mer info</a>
+        </section>
+
+        <section class="popup" id="overlay">
+          <article class="popup__content">
+            <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
+            <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant
+              vel non. Arcu eget eget et et semper dictumst velit.</p>
+          </article>
+        </section>
+      </div>
+
+      <div class="text-box__info">
+        <p>Klockan 10:30-11:15 Bygg fantastiska grejer med Javascript Jimmy Grugor</p>
+        <section class="popup-area">
+          <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
+              viewBox="0 0 7 13" fill="none">
+              <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
+            </svg> Mer info</a>
+        </section>
+
+        <section class="popup" id="overlay">
+          <article class="popup__content">
+            <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
+            <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant
+              vel non. Arcu eget eget et et semper dictumst velit.</p>
+          </article>
+        </section>
+      </div>
+
+      <div class="text-box__info">
+        <p>Klockan 14:00-15:20 Allt du behöver veta om Javascript med Ann Sylvester</p>
+        <section class="popup-area">
+          <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
+              viewBox="0 0 7 13" fill="none">
+              <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
+            </svg> Mer info</a>
+        </section>
+
+        <section class="popup" id="overlay">
+          <article class="popup__content">
+            <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
+            <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant
+              vel non. Arcu eget eget et et semper dictumst velit.</p>
+          </article>
+        </section>
+      </div>
+
+      <div class="text-box__info">
+        <p>Klockan 15:40-17:20 Det nya som kommer hända med Javascript med Tiffany Fox</p>
+        <section class="popup-area">
+          <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
+              viewBox="0 0 7 13" fill="none">
+              <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
+            </svg> Mer info</a>
+        </section>
+
+        <section class="popup" id="overlay">
+          <article class="popup__content">
+            <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
+            <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant
+              vel non. Arcu eget eget et et semper dictumst velit.</p>
+          </article>
+        </section>
+      </div>
+
+
+
+
+
+
+    </article>
+
+
+    <section class="heading-persons">
+
+
+      <h1> Några av de personer som kommer hålla föredrag på kongressen</h1>
+      <hr>
+    </section>
+
+    <section class="Image-container">
+
+
+      <figure class="image-container__img-1 image-container__img--highlighted" alt="Jimmy Grugor">
+        <p>Jimmy Grugor
+          <br>
+          Javascript
+        </p>
+      </figure>
+
+      <figure class="image-container__img-2 image-container__img--highlighted" alt="Josefine Smith">
+        <p>Josefine Smith
+          <br>
+          Html
+        </p>
+      </figure>
+
+      <figure class="image-container__img-3 image-container__img--highlighted" alt="Ann Sylvester">
+        <p>Ann Sylvester
+          <br>
+          Javascript
+        </p>
+      </figure>
+
+      <figure class="image-container__img-4 image-container__img--highlighted" alt="Chris Hemfer">
+        <p>Chris Hemfer
+          <br>
+          Css
+        </p>
+
+
+      </figure>
+
+      <figure class="image-container__img-5 image-container__img--highlighted" alt="Steve Grabbson">
+        <p>Steve Grabbson
+          <br>
+          Html
+        </p>
+      </figure>
+
+    </section>
+
+
+  </main>
+
+  <footer>
+
+    <article class="footer__text">
       <h1>Bättre webb.</h1>
       <hr>
       <p> Vi är ett företag som fokuserar på att skapa seminarier. </p>
       <p> Vi har ett brett kontaktnät med branschens främsta programerare. </p>
       <p> För mer frågor kontakta oss via mail: <u> battrewebb@gmail.com </u></p>
-      </article>
-      
-      
-      
-      
-      
-      <section class="footer__logos">
+    </article>
+
+
+
+
+
+    <section class="footer__logos">
       <img src="./startsida img/instagram.png" alt="instagram">
       <img src="./startsida img/facebook.png" alt="facebook">
-      </section>
-      
-      
-      
-          </footer>
-	
+    </section>
+
+
+
+  </footer>
+
 </body>
 
 </html>

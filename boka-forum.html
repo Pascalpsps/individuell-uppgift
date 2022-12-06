@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,166 +9,185 @@
     <link rel="stylesheet" href="footer.css">
     <title>Bättre webb</title>
 </head>
+
 <body>
     <header>
-       
-        <div onclick="window.location.href = 'http://127.0.0.1:5500/startsida.html'" class="header__logo"> Bättre webb. </div>
-        <div>
-        <button onclick="window.location.href = 'http://127.0.0.1:5500/boka-forum.html'" class="header__button__main">Boka nu</button>
-        <button onclick="window.location.href = 'http://127.0.0.1:5500/seminarier.html'" class="header__button">Seminarier</button>
-        <button onclick="window.location.href = 'http://127.0.0.1:5500/startsida.html'" class="header__button">Startsida</button>
-      
+
+        <div onclick="window.location.href = 'http://127.0.0.1:5500/startsida.html'" class="header__logo"> Bättre webb.
+        </div>
+        <div class="header__grouped-buttons">
+            <button onclick="window.location.href = 'http://127.0.0.1:5500/boka-forum.html'"
+                class="header__button__main">Boka nu</button>
+            <button onclick="window.location.href = 'http://127.0.0.1:5500/seminarier.html'"
+                class="header__button">Seminarier</button>
+            <button onclick="window.location.href = 'http://127.0.0.1:5500/startsida.html'"
+                class="header__button">Startsida</button>
+        </div>
     </header>
     <main>
 
         <section class="form">
 
 
-     <section class="heading-form">
-      <h1>Boka seminarie</h1>
-      
-     </section>
+            <section class="heading-form">
+                <h1>Boka seminarie</h1>
 
-     <form action="#">
+            </section>
 
-     <section class="form-personal-data">
+            <form action="#">
 
-        <h2 class="form-personal-data__heading"> Person uppgifter:</h2>
+                <section class="form-personal-data">
 
-       
+                    <h2 class="form-personal-data__heading"> Person uppgifter:</h2>
 
-             <div class="form-personal-data__flex">
-            <label for="name">Namn:</label>
-            <input type="name" placeholder="John Smith" name="namn" required>
-            <p class="error-messeage">Var vänligen att skriv in ditt namn</p>
-            <br>
-        </div>
 
-        <div class="form-personal-data__flex">
 
-            <label for="email">Email:</label>
-            <input type="email" placeholder="John.Smith@gmail.com" name="epost" required>
-            <p class="error-messeage">Var vänligen att skriv in din email</p>
-            <br>
-        </div>
+                    <div class="form-personal-data__flex form-personal-data__flex--highlighted">
+                        <label for="name">Namn:</label>
+                        <input type="name" placeholder="Namn" id="name" name="namn" required>
+                        <p class="error-messeage">Var vänligen att skriv in ditt namn</p>
+                        <br>
+                    </div>
 
-        <div class="form-personal-data__flex">
-            <label for="nummer">Mobilnummer:</label>
-            <input type="nummer" placeholder="070568890 " name="nummer" minlength="8" maxlength="16" required>
-            <p class="error-messeage">Var vänligen att skriv in ditt telefonummer</p>
-            <br>
-        </div>
+                    <div class="form-personal-data__flex form-personal-data__flex--highlighted">
 
-            
+                        <label for="email">Email:</label>
+                        <input type="email" placeholder="Epost" id="email" name="epost" required>
+                        <p class="error-messeage">Var vänligen att skriv in din email</p>
+                        <br>
+                    </div>
 
-        
+                    <div class="form-personal-data__flex form-personal-data__flex--highlighted">
+                        <label for="nummer">Mobilnummer:</label>
+                        <input type="nummer" placeholder="Nummer " id="nummer" name="nummer" minlength="8"
+                            maxlength="16" required>
+                        <p class="error-messeage">Var vänligen att skriv in ditt telefonummer</p>
+                        <br>
+                    </div>
 
-     </section>
-     <br>
-     <section class="form-food">
 
-        <h2 class="form-food__heading"> Mat och allergier</h2>
-
-        
-
-          
-            <input type="radio" id="food1" name="food" value="fisk" required>
-            <label for="food1">Fisk</label><br>
-           
-       
-
-       
-            <input type="radio" id="food2" name="food" value="kött">
-            <label for="food2">Kött</label><br>
-            
-       
-
-           
-            <input type="radio" id="food3" name="food" value="vegitariskt">
-            <label for="food3">Vego </label><br><br>
-            
-            
-        
-            
-       
-
-          
-            <p class="form-food__special-food-heading">Vänligen skriv dina allergier här:</p>
-            <textarea name="message" rows="10" cols="30"></textarea>
-        
-          
-          
-
-    </section>
-      <br>
-    <section class="form-ticket">
-
-        <h2 class="form-ticket__haeding">Biljetter för seminariet</h2>
-     
-       
-
-           
-            <input type="radio" id="ticket1" name="ticket" value="Biljett för: 9/12 (200kr)" required>
-            <label for="ticket1"> Biljett för: 9/12 (200kr)</label><br>
-        
-        
-            <input type="radio" id="ticket2" name="ticket" value="Biljett för: 10/12 (200kr)">
-            <label for="ticket2"> Biljett för: 10/12 (200kr)</label><br>
-       
-        
-        
-            <input type="radio" id="ticket3" name="ticket" value="Biljett för: 11/12 (250kr)">
-            <label for="ticket3"> Biljett för: 11/12 (250kr)</label><br><br>
-       
-
-          
-            <input type="radio" id="ticket4" name="ticket" value="Biljett för hela seminariet: (500kr)">
-            <label for="ticket4"> Biljett för hela seminariet: (500kr)</label><br><br>
-        
-            
-        
-            
-       
-
-       
-            
-        <button class="form__button" type="submit"> Boka nu</button>
-
-       </form>
-
-    </section>
+                    <div class="form-personal-data__flex form-personal-data__flex--highlighted">
+                        <label for="adress">Adress:</label>
+                        <input type="adress" placeholder="Adress" id="adress" name="adress" minlength="5" required>
+                        <p class="error-messeage">Var vänligen att skriv in ditt telefonummer</p>
+                        <br>
+                    </div>
 
 
 
 
 
-</section>
+                </section>
+                <br>
+                <section class="form-food">
+
+                    <h2 class="form-food__heading"> Mat och allergier</h2>
+
+
+
+
+                    <input type="radio" id="food1" name="food" value="fisk" required>
+                    <label for="food1">Nej, Jag vill inte ha lunch under serminerier</label><br><br>
+
+
+
+
+                    <input type="radio" id="food2" name="food" value="kött">
+                    <label for="food2">Ja, jag vill ha lunch under seminariet</label><br>
+
+                    <div class="form-food__choose-food">
+                        <label for="mat">Välj typ av maträtt:</label>
+                        <select name="mat" id="mat">
+                            <option value="kött">Välj mat rätt</option>
+                            <option value="kött">Kött</option>
+                            <option value="fisk">Fisk</option>
+                            <option value="vegitariskt">Vegitarisk</option> <br>
+                    </div>
+                    </select>
+
+
+
+
+
+                    <p class="form-food__special-food-heading">Vänligen skriv dina allergier här:</p>
+                    <textarea name="message" rows="10" cols="30"></textarea>
+
+
+
+
+                </section>
+                <br>
+                <section class="form-ticket">
+
+                    <h2 class="form-ticket__haeding">Biljetter för seminariet</h2>
+
+
+
+
+                    <input type="radio" id="ticket1" name="ticket" value="Biljett för: 9/12 (200kr)" required>
+                    <label for="ticket1"> Biljett för: 9/12 (200kr)</label> <br>
+
+
+                    <input type="radio" id="ticket2" name="ticket" value="Biljett för: 10/12 (200kr)">
+                    <label for="ticket2"> Biljett för: 10/12 (200kr)</label><br>
+
+
+
+                    <input type="radio" id="ticket3" name="ticket" value="Biljett för: 11/12 (250kr)">
+                    <label for="ticket3"> Biljett för: 11/12 (250kr)</label><br>
+
+
+                    <input type="radio" id="ticket4" name="ticket" value="Biljett för hela seminariet: (500kr)">
+                    <label for="ticket4"> Biljett för hela seminariet: (500kr)</label> <br> <br>
+
+
+                    <hr>
+                    <input type="checkbox" id="checkbox-1" name="checkbox-1"
+                        value="Biljett för hela seminariet: (500kr)">
+                    <label for="checkbox-1"> Ja, jag vill prenumerera på Bättre webb nyhetsbrev</label> <br> <br>
+
+                    <button class="form__button form__button--highlighted" type="submit"> Boka nu</button>
+                </section>
+
+
+
+
+            </form>
+
+        </section>
+
+
+
+
+
+        </section>
 
 
     </main>
-    
+
     <footer>
 
         <article class="footer__text">
-        <h1>Bättre webb.</h1>
-        <hr>
-        <p> Vi är ett företag som fokuserar på att skapa seminarier. </p>
-        <p> Vi har ett brett kontaktnät med branschens främsta programerare. </p>
-        <p> För mer frågor kontakta oss via mail: <u> battrewebb@gmail.com </u></p>
+            <h1>Bättre webb.</h1>
+            <hr>
+            <p> Vi är ett företag som fokuserar på att skapa seminarier. </p>
+            <p> Vi har ett brett kontaktnät med branschens främsta programerare. </p>
+            <p> För mer frågor kontakta oss via mail: <u> battrewebb@gmail.com </u></p>
         </article>
-        
-        
-        
-        
-        
+
+
+
+
+
         <section class="footer__logos">
-        <img src="./startsida img/instagram.png" alt="instagram">
-        <img src="./startsida img/facebook.png" alt="facebook">
+            <img src="./startsida img/instagram.png" alt="instagram">
+            <img src="./startsida img/facebook.png" alt="facebook">
         </section>
-        
-        
-        
-            </footer>
-    
+
+
+
+    </footer>
+
 </body>
+
 </html>

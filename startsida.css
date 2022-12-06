@@ -12,114 +12,115 @@ body {
 }
 
 
-main{
+main {
     grid-area: main;
     display: grid;
     grid-template-columns: 0.3fr 1fr 0.3fr;
-    grid-template-rows: 35em 30em 1fr ;
-grid-template-areas:
-    " hero-img hero-img hero-img "
-    ". info-container ."
-    " image-slide image-slide image-slide"
+    grid-template-rows: 35em 30em 1fr;
+    grid-template-areas:
+        " hero-img hero-img hero-img "
+        ". info-container ."
+        " image-slide image-slide image-slide"
 
-;
-   }
+    ;
+}
 
-   .hero-image{
+.hero-image {
     grid-area: hero-img;
     background-image: url('https://akamai.vgc.no/v2/images/e8b014e2-db48-4d53-aa16-3547bf92b0e2?fit=crop&format=auto&h=814&w=1900&s=669a6f2ad57b6893a7fe8a97bc52632a12348e45');
 
     background-position: center;
     background-size: cover;
-    
-  
+
+
 }
 
-.hero-image__heding{
+.hero-image__heding {
     color: white;
-    background: rgb(93,170,255);
-background: linear-gradient(90deg, rgba(93,170,255,0.6786064767703957) 0%, rgba(7,122,242,0.6758053563222164) 100%);
+    background: rgb(93, 170, 255);
+    background: linear-gradient(90deg, rgba(93, 170, 255, 0.6786064767703957) 0%, rgba(7, 122, 242, 0.6758053563222164) 100%);
 
-padding: 1.5em;
-text-align: center;
+    padding: 1.5em;
+    text-align: center;
 
 }
 
-.hero-image__heding > p{
+.hero-image__heding>p {
     font-size: 1em;
 }
 
-   .info-container{
+.info-container {
     grid-area: info-container;
-   
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
+
     align-items: center;
     gap: 1em;
-  
-    
-   }
 
-   .info-container__text{
+
+}
+
+.info-container__text {
     font-size: 1.3em;
     text-align: center;
-   }
+}
 
-   .info-container__image > img{
+.info-container__image>img {
     width: 20em;
     height: 15em;
     border-radius: 0.6em;
-    border: 9px solid rgb(93,170,255) ;
-   }
+    border: 9px solid rgb(93, 170, 255);
+}
 
-   .info-container__button{
+.info-container__button {
     border: 2px solid rgb(46, 86, 219);
     background-color: rgb(46, 86, 219);
     color: white;
-    border-radius: 10em ;
- margin-right: 1em;
-    width:8em;
+    border-radius: 10em;
+    margin-right: 1em;
+    width: 8em;
     height: 2.5em;
     font-size: 20px;
     padding: 0.4em;
     font-weight: bolder;
-   margin-left: 1em;
-    transition: 0.3s ;
-   }
+    margin-left: 1em;
+    transition: 0.3s;
+}
 
-   .info-container__button:hover{
+.info-container__button:hover {
     background-color: white;
     color: rgb(46, 86, 219);
     font-weight: bolder;
     border: 2px solid rgb(46, 86, 219);
     box-shadow: 0em 0em 0.7em 0.5px rgb(164, 164, 164);
     cursor: pointer;
-   }
+}
 
 
-  
-  
 
-   .image-container{
+
+
+.image-container {
     grid-area: image-slide;
-    background: rgb(93,170,255);
-background: linear-gradient(90deg, rgba(93,170,255,0.6786064767703957) 0%, rgba(7,122,242,0.6758053563222164) 100%);
-   }
+    background: rgb(93, 170, 255);
+    background: linear-gradient(90deg, rgba(93, 170, 255, 0.6786064767703957) 0%, rgba(7, 122, 242, 0.6758053563222164) 100%);
 
-   .image-container__img{
+}
+
+.image-container__img {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-   margin: 1em;
-   
-   position: relative;
-   
-   }
+    margin: 1em;
 
-   .image-container__img .first{
+    position: relative;
+
+}
+
+.image-container__img .first {
     background-image: url('./startsida img/3272512706.jpg');
     width: 15em;
     height: 15em;
@@ -128,9 +129,9 @@ background: linear-gradient(90deg, rgba(93,170,255,0.6786064767703957) 0%, rgba(
     text-align: center;
     border-radius: 0.6em;
     transition: 0.3s;
-   }
+}
 
-   .image-container__img .second{
+.image-container__img .second {
     background-image: url('./startsida img/491239_1280.jpg');
     width: 15em;
     height: 15em;
@@ -139,9 +140,9 @@ background: linear-gradient(90deg, rgba(93,170,255,0.6786064767703957) 0%, rgba(
     text-align: center;
     border-radius: 0.6em;
     transition: 0.3s;
-   }
+}
 
-   .image-container__img .third{
+.image-container__img .third {
     background-image: url('./startsida img/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.webp');
     width: 15em;
     height: 15em;
@@ -150,55 +151,55 @@ background: linear-gradient(90deg, rgba(93,170,255,0.6786064767703957) 0%, rgba(
     text-align: center;
     border-radius: 0.6em;
     transition: 0.3s;
-    
-    
-   }
 
-   
 
-   .image-container__img--highlighted:hover{
-    box-shadow: 0em 0em 0.7em 0.5px rgb(78, 78, 78) ;
-   } 
-
-  
+}
 
 
 
-   .image-container__img > p{
-background-color: rgb(46, 86, 219);
-
-height: 3em;
-
-
-   }
-
-   
-
-
-  
-   .image-container__img > img{
-     width: 15em;
-     height: 15em;
-   }
-   
+.image-container__img--highlighted:hover {
+    box-shadow: 0em 0em 0.7em 0.5px rgb(78, 78, 78);
+}
 
 
 
 
 
-@media only screen and (max-width: 910px) and (min-width: 754px){
-  
+.image-container__img>p {
+    background-color: rgb(46, 86, 219);
 
-       .info-container{
-        
-       
+    height: 3em;
+
+
+}
+
+
+
+
+
+.image-container__img>img {
+    width: 15em;
+    height: 15em;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 910px) and (min-width: 754px) {
+
+
+    .info-container {
+
+
         display: flex;
         flex-direction: column;
-        
-        
-      
-  
-       }
+
+
+
+
+    }
 
 }
 
@@ -208,48 +209,48 @@ height: 3em;
 @media only screen and (max-width: 754px) {
 
 
-    main{
+    main {
         grid-area: main;
         display: grid;
         grid-template-columns: 0.3fr 1fr 0.3fr;
-        grid-template-rows: 35em 23em 1fr ;
-    grid-template-areas:
-        " hero-img hero-img hero-img "
-        "info-container info-container info-container"
-        " image-slide image-slide image-slide"
-    
-    ;
-       }
+        grid-template-rows: 35em 23em 1fr;
+        grid-template-areas:
+            " hero-img hero-img hero-img "
+            "info-container info-container info-container"
+            " image-slide image-slide image-slide"
 
-  
+        ;
+    }
 
 
-     
 
 
-     
 
-    .info-container__image > img{
+
+
+
+
+    .info-container__image>img {
         width: 15em;
         height: 10em;
-        
-        border: 9px solid rgb(93,170,255) ;
-       }
 
-       .info-container{
+        border: 9px solid rgb(93, 170, 255);
+    }
+
+    .info-container {
         gap: 0em;
         display: flex;
         flex-direction: column;
-       }
-
-     
-
-    
-
-      
-
-    
+    }
 
 
 
-  }
+
+
+
+
+
+
+
+
+}
