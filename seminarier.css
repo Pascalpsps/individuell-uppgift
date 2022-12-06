@@ -160,11 +160,22 @@ body {
   background: rgb(93, 170, 255);
   background: linear-gradient(90deg, rgba(93, 170, 255, 0.6786064767703957) 0%, rgba(7, 122, 242, 0.6758053563222164) 100%);
   border-radius: 0.5em;
-  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+
+.heading__image {
+  width: 10em;
+  height: 10em;
+  border-radius: 0.5em;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 
@@ -308,14 +319,20 @@ a {
   }
 
   .heading__more-text {
- 
+    flex-direction: column;
     border-radius: 0em;
   }
 
-  .heading__more-text > p{
+  .heading__more-text>p {
     margin-left: 1em;
     margin-right: 1em;
   }
+
+  .heading__image {
+    margin-right: 0em;
+  }
+
+
 
 
 }

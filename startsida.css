@@ -27,13 +27,15 @@ main {
 
 .hero-image {
     grid-area: hero-img;
-    background-image: url('https://akamai.vgc.no/v2/images/e8b014e2-db48-4d53-aa16-3547bf92b0e2?fit=crop&format=auto&h=814&w=1900&s=669a6f2ad57b6893a7fe8a97bc52632a12348e45');
+    background-image: url('https://appex.no/wp-content/uploads/2017/08/getting-started-programming-1920x1080.jpeg');
 
     background-position: center;
     background-size: cover;
 
 
 }
+
+
 
 .hero-image__heding {
     color: white;
@@ -46,7 +48,7 @@ main {
 }
 
 .hero-image__heding>p {
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .info-container {
@@ -159,6 +161,8 @@ main {
 
 .image-container__img--highlighted:hover {
     box-shadow: 0em 0em 0.7em 0.5px rgb(78, 78, 78);
+    
+    width: 18em;
 }
 
 

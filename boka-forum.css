@@ -140,6 +140,15 @@ input {
 }
 
 
+.form-food__choose-food{
+    visibility: hidden;
+}
+input:valid+.error-messeage + .form-food__choose-food{
+    visibility: visible;
+    
+}
+
+
 .form-food {
     grid-area: form-food;
     border: 1px solid black;
