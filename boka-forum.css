@@ -129,6 +129,8 @@ input {
 
 
 
+
+
 .form-personal-data__flex>input {
     width: 30em;
     height: 3em;
@@ -222,7 +224,7 @@ input:valid+.error-messeage+.form-food__choose-food  {
 }
 
 
-.form__button {
+.form__button-submit--highlighted {
     border: 2px solid rgb(46, 86, 219);
     background-color: rgb(46, 86, 219);
     color: white;
@@ -233,15 +235,36 @@ input:valid+.error-messeage+.form-food__choose-food  {
     font-size: 20px;
     padding: 0.4em;
     font-weight: bolder;
-    margin-left: 1em;
+   
     transition: 0.3s;
 }
 
-.form__button--highlighted:hover {
+.form__button-submit--highlighted:hover {
     background-color: white;
     color: rgb(46, 86, 219);
     font-weight: bolder;
     border: 2px solid rgb(46, 86, 219);
+    box-shadow: 0em 0em 0.7em 0.5px rgb(164, 164, 164);
+    cursor: pointer;
+}
+
+
+.form__button-reset--highlighted{
+  background-color: transparent;
+    color: white;
+    border-radius: 10em;
+
+    width: 5em;
+    height: 2.5em;
+    font-size: 20px;
+    padding: 0.4em;
+    font-weight: bolder;
+    
+    transition: 0.3s;
+}
+
+.form__button-reset--highlighted:hover {
+    
     box-shadow: 0em 0em 0.7em 0.5px rgb(164, 164, 164);
     cursor: pointer;
 }

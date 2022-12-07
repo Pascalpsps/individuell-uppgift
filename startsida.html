@@ -19,17 +19,19 @@
   <header>
 
     
+        <nav class="header-nav">
+          <a class="header-nav__logo" href=""> Bättre Webb</a>
 
-    <section onclick="window.location.href = './startsida.html'" class="header__logo"> Bättre webb.
-    </section>
+    <section class="header-nav__gropued-buttons">
 
-    <section class="header__grouped-buttons">
-      <button onclick="window.location.href = './boka-forum.html'" class="header__button--main">Boka
-        nu</button>
-      <button onclick="window.location.href = './seminarier.html'" class="header__button">Seminarier</button>
-      <button onclick="window.location.href = './startsida.html'" class="header__button">Startsida</button>
-    </section>
+    <a class="header-nav__button--blue" href="./boka-forum.html"> Boka nu</a>
 
+    <a class="header-nav__button header-nav__button--highlighted" href="./seminarier.html"> Seminarier</a>
+
+    <a class="header-nav__button header-nav__button--highlighted" href="./startsida.html"> Startsida</a>
+  </section>
+
+  </nav>
     
 
   </header>
@@ -56,8 +58,8 @@
       <section class="info-container__text ">
         <p>Anmäl dig till våra seminarier i karlstad mellan 9/12 - 12/12</p>
 
-        <button onclick="window.location.href = 'http://127.0.0.1:5500/boka-forum.html'"
-          class="info-container__button">Boka nu</button>
+       
+          <a class="info-container__button" href="./boka-forum.html"> Boka nu</a>
       </section>
 
       <section class="info-container__image">
@@ -76,23 +78,17 @@
 
 
       <figure class="image-container__img-1 image-container__img--highlighted" alt="person som programerar">
-        <p>Jimmy Grugor
-          <br>
-          Javascript
+        <p> Lär dig mer om programering ifrån riktiga proffs
         </p>
       </figure>
 
       <figure class="image-container__img-2 image-container__img--highlighted" alt="Josefine Smith">
-        <p>Josefine Smith
-          <br>
-          Html
+        <p>Ta dina programerings kunskaper till nästa nivå
         </p>
       </figure>
 
       <figure class="image-container__img-3 image-container__img--highlighted" alt="Ann Sylvester">
-        <p>Ann Sylvester
-          <br>
-          Javascript
+        <p> Träffa massa härlga människor som delar lika intresse som dig
         </p>
       </figure>
 
@@ -106,7 +102,9 @@
   <!-- footer -->
   <footer>
 
-    <article class="footer__text">
+    <section class="footer-container">
+
+    <article class="footer-container__text">
       <h1>Bättre webb.</h1>
       <hr>
       <p> Vi är ett företag som fokuserar på att skapa seminarier. </p>
@@ -119,12 +117,12 @@
 
 
 
-    <section class="footer__logos">
+    <section class="footer-container__logos">
       <img src="./startsida img/instagram.png" alt="instagram">
       <img src="./startsida img/facebook.png" alt="facebook">
     </section>
 
-
+  </section>
 
   </footer>
 

@@ -20,15 +20,20 @@
 
   <header>
 
-    <section onclick="window.location.href = './startsida.html'" class="header__logo"> Bättre webb.
+    <nav class="header-nav">
+   
+      <a class="header-nav__logo" href=""> Bättre Webb</a>
+  
+      <section class="header-nav__gropued-buttons">
+  
+      <a class="header-nav__button--blue" href="./boka-forum.html"> Boka nu</a>
+  
+      <a class="header-nav__button header-nav__button--highlighted" href="./seminarier.html"> Seminarier</a>
+  
+      <a class="header-nav__button header-nav__button--highlighted" href="./startsida.html"> Startsida</a>
     </section>
-
-    <section class="header__grouped-buttons">
-      <button onclick="window.location.href = './boka-forum.html'" class="header__button--main">Boka
-        nu</button>
-      <button onclick="window.location.href = './seminarier.html'" class="header__button">Seminarier</button>
-      <button onclick="window.location.href = './startsida.html'" class="header__button">Startsida</button>
-    </section>
+  
+    </nav>
   
   </header>
 
@@ -329,7 +334,9 @@
 
   <footer>
 
-    <article class="footer__text">
+    <section class="footer-container">
+
+    <article class="footer-container__text">
       <h1>Bättre webb.</h1>
       <hr>
       <p> Vi är ett företag som fokuserar på att skapa seminarier. </p>
@@ -341,14 +348,20 @@
 
 
 
-    <section class="footer__logos">
+
+    <section class="footer-container__logos">
       <img src="./startsida img/instagram.png" alt="instagram">
       <img src="./startsida img/facebook.png" alt="facebook">
     </section>
 
-
+  </section>
 
   </footer>
+
+
+
+
+  
   <!-- footer -->
 
 </body>

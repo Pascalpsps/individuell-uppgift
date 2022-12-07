@@ -5,11 +5,16 @@ header {
     border-bottom: 1px solid gray;
 
 
+    
+
+}
+
+.header-nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
+    margin-top: 2em;
 }
 
 
@@ -20,45 +25,46 @@ header {
 
 
 
-.header__button {
-    border: none;
-    background-color: white;
-    color: black;
-
-    margin-right: 0em;
-    width: 7em;
-    height: 3em;
+.header-nav__button {
+    
+   color: black;
+    border-radius: 10em;
+    margin-right: 1em;
+    padding: 0.4em 1em;
     font-size: 1.1em;
+    text-decoration: none;
+
     font-weight: bolder;
+    transition: 0.3s;
+    
+    
 
 
 
 }
 
-.header__button:hover {
+.header-nav__button--highlighted:hover {
     color: rgb(46, 86, 219);
     cursor: pointer;
 }
 
-.header__button--main {
+.header-nav__button--blue {
     border: 2px solid rgb(46, 86, 219);
     background-color: rgb(46, 86, 219);
     color: white;
     border-radius: 10em;
     margin-right: 1em;
-    width: 6em;
-    height: 3em;
+    padding: 0.4em 1em;
     font-size: 1.1em;
+    text-decoration: none;
 
     font-weight: bolder;
     transition: 0.3s;
-
-
 }
 
 
 
-.header__button--main:hover {
+.header-nav__button--blue:hover {
     background-color: white;
     color: rgb(46, 86, 219);
     font-weight: bolder;
@@ -70,15 +76,16 @@ header {
 
 
 
-.header__logo {
+.header-nav__logo {
     font-size: 50px;
     font-weight: bolder;
     margin-left: 1em;
     color: black;
+  text-decoration: none;
 
 }
 
-.header__logo:hover {
+.header-nav__logo:hover {
     cursor: pointer;
 }
 
@@ -89,52 +96,46 @@ header {
 
 
 
-@media only screen and (max-width: 754px) {
+@media only screen and (max-width: 849px) {
 
 
 
 
-    header {
+    .header-nav {
         flex-direction: column;
         justify-content: space-around;
-
+         margin-top: 1em;
+         gap: 1.2em;
     }
 
-    .header__logo {
+    .header-nav__logo {
         font-size: 35px;
         margin-left: 0;
 
 
     }
 
-    .header__button {
-
-        margin-bottom: 0em;
-        width: 5.5em;
-        height: 2.5em;
-    }
-
-    .header__button__main {
+    .header-nav__button {
+       margin-right: 0em;
+       font-size: 1em;
+        padding: 0.5em 0.7em;
 
 
-
-        width: 5.5em;
-        height: 2.5em;
-
-
-    }
-
-    .header__button {
         border: none;
         background-color: white;
         color: black;
+    }
 
+    .header-nav__button--blue {
 
+        font-size: 1em;
 
-
-
+     margin-right: 0em;
+     padding: 0.5em 0.7em;
 
     }
+
+   
 
 
 }
