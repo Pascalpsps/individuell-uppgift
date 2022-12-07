@@ -1,9 +1,5 @@
-
-
-   
-
 header {
-   
+
     grid-area: header;
     background-color: white;
     border-bottom: 1px solid gray;
@@ -12,42 +8,48 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  align-items: center;
- 
+    align-items: center;
+
 }
 
 
 
-.header__button{
-   border: none;
+
+
+
+
+
+
+.header__button {
+    border: none;
     background-color: white;
     color: black;
-    
- margin-right: 0em;
-    width:7em;
+
+    margin-right: 0em;
+    width: 7em;
     height: 3em;
     font-size: 1.1em;
     font-weight: bolder;
-   
+
 
 
 }
 
-.header__button:hover{
+.header__button:hover {
     color: rgb(46, 86, 219);
     cursor: pointer;
 }
 
-.header__button__main{
+.header__button--main {
     border: 2px solid rgb(46, 86, 219);
     background-color: rgb(46, 86, 219);
     color: white;
-    border-radius: 10em ;
- margin-right: 1em;
-    width:6em;
+    border-radius: 10em;
+    margin-right: 1em;
+    width: 6em;
     height: 3em;
     font-size: 1.1em;
-   
+
     font-weight: bolder;
     transition: 0.3s;
 
@@ -56,7 +58,7 @@ header {
 
 
 
-.header__button__main:hover{
+.header__button--main:hover {
     background-color: white;
     color: rgb(46, 86, 219);
     font-weight: bolder;
@@ -68,15 +70,15 @@ header {
 
 
 
-.header__logo{
-  font-size: 50px;
-  font-weight: bolder;
+.header__logo {
+    font-size: 50px;
+    font-weight: bolder;
     margin-left: 1em;
     color: black;
-    
+
 }
 
-.header__logo:hover{
+.header__logo:hover {
     cursor: pointer;
 }
 
@@ -90,49 +92,49 @@ header {
 @media only screen and (max-width: 754px) {
 
 
-       
+
 
     header {
         flex-direction: column;
         justify-content: space-around;
-    
+
     }
 
-    .header__logo{
+    .header__logo {
         font-size: 35px;
-       margin-left: 0;
-       
+        margin-left: 0;
 
-      }
 
-      .header__button{ 
-      
-      margin-bottom: 0em;
-      width:5.5em;
-      height: 2.5em;
-     }
-
-     .header__button__main{
-     
-    
-     
-     width:5.5em;
-     height: 2.5em;
-    
-    
     }
 
-    .header__button{
+    .header__button {
+
+        margin-bottom: 0em;
+        width: 5.5em;
+        height: 2.5em;
+    }
+
+    .header__button__main {
+
+
+
+        width: 5.5em;
+        height: 2.5em;
+
+
+    }
+
+    .header__button {
         border: none;
-         background-color: white;
-         color: black;
-         
-     
-       
-        
-     
-     
-     }
+        background-color: white;
+        color: black;
 
 
-  }
+
+
+
+
+    }
+
+
+}

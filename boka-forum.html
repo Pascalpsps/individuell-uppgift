@@ -7,23 +7,28 @@
     <link rel="stylesheet" href="boka-forum.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
+
+    <link rel="icon" type="image/x-icon" href="/startsida img/Nytt projekt (5).png">
     <title>Bättre webb</title>
 </head>
 
 <body>
+
+    <!-- Header -->
     <header>
 
-        <div onclick="window.location.href = 'http://127.0.0.1:5500/startsida.html'" class="header__logo"> Bättre webb.
-        </div>
-        <div class="header__grouped-buttons">
-            <button onclick="window.location.href = 'http://127.0.0.1:5500/boka-forum.html'"
-                class="header__button__main">Boka nu</button>
-            <button onclick="window.location.href = 'http://127.0.0.1:5500/seminarier.html'"
-                class="header__button">Seminarier</button>
-            <button onclick="window.location.href = 'http://127.0.0.1:5500/startsida.html'"
-                class="header__button">Startsida</button>
-        </div>
+        <section onclick="window.location.href = './startsida.html'" class="header__logo"> Bättre webb.
+        </section>
+
+        <section class="header__grouped-buttons">
+            <button onclick="window.location.href = './boka-forum.html'" class="header__button--main">Boka
+                nu</button>
+            <button onclick="window.location.href = './seminarier.html'" class="header__button">Seminarier</button>
+            <button onclick="window.location.href = './startsida.html'" class="header__button">Startsida</button>
+        </section>
     </header>
+    <!-- Header -->
+
     <main>
 
         <section class="form">
@@ -35,6 +40,9 @@
             </section>
 
             <form action="#">
+
+
+                <!-- Person uppgifter -->
 
                 <section class="form-personal-data">
 
@@ -74,40 +82,42 @@
                     </div>
 
 
-
-
-
                 </section>
+
+                <!-- Person uppgifter -->
+
+
+                <!-- Mat uppgifter -->
                 <br>
                 <section class="form-food">
 
                     <h2 class="form-food__heading"> Mat och allergier</h2>
 
 
-                    
-                      <section>
-                        <label for="food1">Nej, Jag vill inte ha lunch under serminerier</label> 
-                    <input type="radio" id="food1" name="food" value="fisk" required> <br> <br>
-                    
-
-                    <label for="food2">Ja, jag vill ha lunch under seminariet</label>
-                    <input type="radio" id="food2" name="food" value="kött">
-                   
-
-                    <p class="error-messeage">Var vänligen att skriv in ditt telefonummer</p>
-                
-                    <div class="form-food__choose-food">
-                        <label for="mat">Välj typ av maträtt:</label>
-                        <select name="mat" id="mat">
-                            <option value="kött">Välj mat rätt</option>
-                            <option value="kött">Kött</option>
-                            <option value="fisk">Fisk</option>
-                            <option value="vegitariskt">Vegitarisk</option> <br>
-                    </div>
 
                     
-                    </select>
-                </section>
+
+                        <label for="food1">Nej, Jag vill inte ha lunch under serminerier</label>
+                        <input type="radio" id="food1" name="food" value="fisk" required> <br>
+
+                     
+                        <label for="food2">Ja, jag vill ha lunch under seminariet</label>
+                        <input type="radio" id="food2" name="food" value="kött">
+                    
+
+                        <p class="error-messeage">Var vänligen att välj ett av alternativen</p>
+
+                        <div class="form-food__choose-food">
+                            <label for="mat">Välj typ av maträtt:</label>
+                            <select name="mat" id="mat">
+                                <option value="kött">Välj mat rätt</option>
+                                <option value="kött">Kött</option>
+                                <option value="fisk">Fisk</option>
+                                <option value="vegitariskt">Vegitarisk</option> <br>
+
+                            </select>
+                        </div>
+                    
 
 
 
@@ -116,42 +126,48 @@
                     <p class="form-food__special-food-heading">Vänligen skriv dina allergier här:</p>
                     <textarea name="message" rows="10" cols="30"></textarea>
 
-
-
-
                 </section>
+
+                <!-- Mat uppgifter -->
+
+
+                <!-- Biljett uppgifter -->
                 <br>
                 <section class="form-ticket">
 
                     <h2 class="form-ticket__haeding">Biljetter för seminariet</h2>
 
 
+                    <label for="biljett1">Biljett för: 9/12 (200kr)</label>
+                    <input type="radio" id="biljett1" name="food" value="fisk" required> <br>
 
 
-                    <input type="radio" id="ticket1" name="ticket" value="Biljett för: 9/12 (200kr)" required>
-                    <label for="ticket1"> Biljett för: 9/12 (200kr)</label> <br>
+                   
 
+                    <label for="biljett2">Biljett för: 10/12 (200kr)</label>
+                    <input type="radio" id="biljett2" name="food" value="fisk" required> <br>
 
-                    <input type="radio" id="ticket2" name="ticket" value="Biljett för: 10/12 (200kr)">
-                    <label for="ticket2"> Biljett för: 10/12 (200kr)</label><br>
+                    <label for="biljett3">Biljett för: 11/12 (250kr)</label>
+                    <input type="radio" id="biljett3" name="food" value="fisk" required> <br>
 
+                 
+                    <label for="biljett4">Biljett för hela seminariet: (500kr)</label>
+                    <input type="radio" id="biljett4" name="food" value="kött">
+                
 
+                    <p class="error-messeage">Var vänligen att välj ett av alternativen</p>
 
-                    <input type="radio" id="ticket3" name="ticket" value="Biljett för: 11/12 (250kr)">
-                    <label for="ticket3"> Biljett för: 11/12 (250kr)</label><br>
-
-
-                    <input type="radio" id="ticket4" name="ticket" value="Biljett för hela seminariet: (500kr)">
-                    <label for="ticket4"> Biljett för hela seminariet: (500kr)</label> <br> <br>
-
-
+              
                     <hr>
                     <input type="checkbox" id="checkbox-1" name="checkbox-1"
                         value="Biljett för hela seminariet: (500kr)">
-                    <label for="checkbox-1"> Ja, jag vill prenumerera på Bättre webb nyhetsbrev</label> <br> <br>
+                    <label for="checkbox-1"> Ja, jag vill prenumerera på Bättre webb nyhetsbrev</label> <br>
 
                     <button class="form__button form__button--highlighted" type="submit"> Boka nu</button>
                 </section>
+
+
+                <!-- Biljett uppgifter -->
 
 
 
@@ -168,6 +184,9 @@
 
 
     </main>
+
+
+    <!-- footer -->
 
     <footer>
 
@@ -191,7 +210,7 @@
 
 
     </footer>
-
+    <!-- footer -->
 </body>
 
 </html>

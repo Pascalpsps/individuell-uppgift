@@ -8,71 +8,102 @@
   <link rel="stylesheet" href="startsida.css">
   <link rel="stylesheet" href="footer.css">
 
+  <link rel="icon" type="image/x-icon" href="/startsida img/Nytt projekt (5).png">
+
   <title>Bättre webb</title>
 </head>
 
 <body>
+
+  <!-- Header -->
   <header>
 
-    <div onclick="window.location.href = './startsida.html'" class="header__logo"> Bättre webb.
-    </div>
-    <div class="header__grouped-buttons">
-      <button onclick="window.location.href = 'http://127.0.0.1:5500/boka-forum.html'" class="header__button__main">Boka
+    
+
+    <section onclick="window.location.href = './startsida.html'" class="header__logo"> Bättre webb.
+    </section>
+
+    <section class="header__grouped-buttons">
+      <button onclick="window.location.href = './boka-forum.html'" class="header__button--main">Boka
         nu</button>
-      <button onclick="window.location.href = 'http://127.0.0.1:5500/seminarier.html'"
-        class="header__button">Seminarier</button>
-      <button onclick="window.location.href = 'http://127.0.0.1:5500/startsida.html'"
-        class="header__button">Startsida</button>
-    </div>
+      <button onclick="window.location.href = './seminarier.html'" class="header__button">Seminarier</button>
+      <button onclick="window.location.href = './startsida.html'" class="header__button">Startsida</button>
+    </section>
+
+    
+
   </header>
+  <!-- Header -->
 
 
   <main>
+
+    <!-- hero img -->
     <section class="hero-image">
 
-      <div class="hero-image__heding">
+      <article class="hero-image__heding">
         <h1>Vi utvecklas framåt, följ med på vår resa</h1>
         <p>Vi på Bättre webb gör framtiden inom programering tillgänglig för dig. <br>
           Anmäl dig till en av våra föreläsningar nu, för att uppleva något intressant. </p>
-      </div>
+      </article>
     </section>
+    <!-- hero img -->
 
+
+    <!-- info + button -->
     <section class="info-container">
 
-      <div class="info-container__text ">
+      <section class="info-container__text ">
         <p>Anmäl dig till våra seminarier i karlstad mellan 9/12 - 12/12</p>
 
         <button onclick="window.location.href = 'http://127.0.0.1:5500/boka-forum.html'"
           class="info-container__button">Boka nu</button>
-      </div>
+      </section>
 
-      <div class="info-container__image">
-        <img src="./startsida img/kompetensutveckling-framtidens-arbetsmarknad-desktop.jpg" alt="böcker och datorer">
-      </div>
+      <section class="info-container__image">
+        <img src="./startsida img/kompetensutveckling-framtidens-arbetsmarknad-desktop.jpg" alt="böcker och datorer" />
+      </section>
     </section>
+    <!-- info + button -->
+
+
+    <!-- image row -->
+   
+
+
 
     <section class="image-container">
-      <div class="image-container__img">
 
-        <figure class="image-container__img image-container__text first image-container__img--highlighted "
-          alt="Person som programerar">
-          <p>Vill du vara en del av framtiden in programering?</p>
 
-        </figure>
+      <figure class="image-container__img-1 image-container__img--highlighted" alt="person som programerar">
+        <p>Jimmy Grugor
+          <br>
+          Javascript
+        </p>
+      </figure>
 
-        <figure class="image-container__img image-container__text second image-container__img--highlighted " alt="Kod">
-          <p>Få hjälp och tips inom programering av proffsen.</p>
-        </figure>
+      <figure class="image-container__img-2 image-container__img--highlighted" alt="Josefine Smith">
+        <p>Josefine Smith
+          <br>
+          Html
+        </p>
+      </figure>
 
-        <figure class="image-container__img image-container__text third image-container__img--highlighted " alt="Dator">
-          <p>Lär dig programera som ett riktigt proffs.</p>
-        </figure>
+      <figure class="image-container__img-3 image-container__img--highlighted" alt="Ann Sylvester">
+        <p>Ann Sylvester
+          <br>
+          Javascript
+        </p>
+      </figure>
 
-      </div>
     </section>
+    <!-- image row -->
 
   </main>
 
+
+
+  <!-- footer -->
   <footer>
 
     <article class="footer__text">
@@ -96,6 +127,8 @@
 
 
   </footer>
+
+  <!-- footer -->
 </body>
 
 </html>

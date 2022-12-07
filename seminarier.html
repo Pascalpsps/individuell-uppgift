@@ -9,42 +9,49 @@
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="footer.css">
 
+  <link rel="icon" type="image/x-icon" href="/startsida img/Nytt projekt (5).png">
+
 </head>
 
 <body>
 
+
+  <!-- Header -->
+
   <header>
 
-    <section onclick="window.location.href = 'http://127.0.0.1:5500/startsida.html'" class="header__logo"> Bättre webb.
+    <section onclick="window.location.href = './startsida.html'" class="header__logo"> Bättre webb.
     </section>
+
     <section class="header__grouped-buttons">
-      <button onclick="window.location.href = 'http://127.0.0.1:5500/boka-forum.html'" class="header__button__main">Boka
+      <button onclick="window.location.href = './boka-forum.html'" class="header__button--main">Boka
         nu</button>
-      <button onclick="window.location.href = 'http://127.0.0.1:5500/seminarier.html'"
-        class="header__button">Seminarier</button>
-      <button onclick="window.location.href = 'http://127.0.0.1:5500/startsida.html'"
-        class="header__button">Startsida</button>
+      <button onclick="window.location.href = './seminarier.html'" class="header__button">Seminarier</button>
+      <button onclick="window.location.href = './startsida.html'" class="header__button">Startsida</button>
     </section>
+  
   </header>
+
+  <!-- Header -->
 
   <main class="inner-grid">
 
 
 
 
-
+    <!-- Rubrik -->
     <section class="heading">
 
 
-      <article class="heading__text">
+      <section class="heading__text">
         <h1> Datum och tider för konferansena</h1>
-      </article>
+      </section>
 
       <hr>
 
       <section class="heading__more-text">
         <article>
-          <p> Konfernasen äger rum i karlstad mellan den 9/11 - 12/11 </p>
+          <p> Konfernasen äger rum i Karlstad mellan den 9/11 - 12/11 </p>
           <p> Plats: Karlstad CCC <u> Tage Erlandergatan 8, 652 20 Karlstad </u></p>
 
         </article>
@@ -52,17 +59,18 @@
       </section>
 
     </section>
+    <!-- Rubrik -->
 
 
-
-    <article class="text-box-1">
+    <!-- Text 1 -->
+    <section class="text-box-1">
       <h2>9/11 - Html</h2>
 
-      <div class="text-box__info">
+      <section class="text-box__info text-box__info--highlighted">
         <p> Klockan 10:00-11:00 Introduktion av Html med Steve Grabbson</p>
 
         <section class="popup-area">
-          <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
+          <a class="button button--highlighted" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
               viewBox="0 0 7 13" fill="none">
               <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
             </svg> Mer info</a>
@@ -76,13 +84,13 @@
           </article>
         </section>
 
-      </div>
+      </section>
 
-      <div class="text-box__info">
+      <section class="text-box__info text-box__info--highlighted">
         <p> Klockan 12:30-14:00 Möjligheter med Html med Josefine Smith</p>
 
         <section class="popup-area">
-          <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
+          <a class="button button--highlighted" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
               viewBox="0 0 7 13" fill="none">
               <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
             </svg> Mer info</a>
@@ -96,13 +104,13 @@
           </article>
         </section>
 
-      </div>
+      </section>
 
-      <div class="text-box__info">
+      <section class="text-box__info text-box__info--highlighted">
         <p> Klockan 14:20-17:20 En värld av Html med Steve Mcgreen</p>
 
         <section class="popup-area">
-          <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
+          <a class="button button--highlighted" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
               viewBox="0 0 7 13" fill="none">
               <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
             </svg> Mer info</a>
@@ -116,23 +124,22 @@
           </article>
         </section>
 
-      </div>
+      </section>
+
+    </section>
+    <!-- Text 1 -->
 
 
 
-    </article>
-
-
-
-
-    <article class="text-box-2">
+    <!-- Text 2 -->
+    <section class="text-box-2">
       <h2>10/11 - Css</h2>
 
-      <div class="text-box__info">
+      <section class="text-box__info text-box__info--highlighted">
         <p> Klockan 09:00-10:30 Styla Css som ett proffs med Lee Hansen</p>
 
         <section class="popup-area">
-          <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
+          <a class="button button--highlighted" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
               viewBox="0 0 7 13" fill="none">
               <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
             </svg> Mer info</a>
@@ -145,12 +152,12 @@
               vel non. Arcu eget eget et et semper dictumst velit.</p>
           </article>
         </section>
-      </div>
+      </section>
 
-      <div class="text-box__info">
+      <section class="text-box__info text-box__info--highlighted">
         <p>Klockan 12:20-15:00 Förjupning av Css med Chris Hemfer</p>
         <section class="popup-area">
-          <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
+          <a class="button button--highlighted" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
               viewBox="0 0 7 13" fill="none">
               <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
             </svg> Mer info</a>
@@ -163,12 +170,12 @@
               vel non. Arcu eget eget et et semper dictumst velit.</p>
           </article>
         </section>
-      </div>
+      </section>
 
-      <div class="text-box__info">
+      <section class="text-box__info text-box__info--highlighted">
         <p>Klockan 14:20-17:20 Tänk nytt med Css med Harvy Tank</p>
         <section class="popup-area">
-          <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
+          <a class="button button--highlighted" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
               viewBox="0 0 7 13" fill="none">
               <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
             </svg> Mer info</a>
@@ -181,20 +188,21 @@
               vel non. Arcu eget eget et et semper dictumst velit.</p>
           </article>
         </section>
-      </div>
+      </section>
 
 
-    </article>
+    </section>
+    <!-- Text 2 -->
 
 
-
-    <article class="text-box-3">
+    <!-- Text 3 -->
+    <section class="text-box-3">
       <h2>11/11 - Javascript</h2>
 
-      <div class="text-box__info">
-        <p> Klockan 8:30-10:00 Hur använder man Javascript med Swee Jao</p>
+      <section class="text-box__info text-box__info--highlighted">
+        <p >  Klockan 8:30-10:00 Hur använder man Javascript med Swee Jao</p>
         <section class="popup-area">
-          <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
+          <a class="button button--highlighted" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
               viewBox="0 0 7 13" fill="none">
               <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
             </svg> Mer info</a>
@@ -207,12 +215,12 @@
               vel non. Arcu eget eget et et semper dictumst velit.</p>
           </article>
         </section>
-      </div>
+      </section>
 
-      <div class="text-box__info">
+      <section class="text-box__info text-box__info--highlighted">
         <p>Klockan 10:30-11:15 Bygg fantastiska grejer med Javascript Jimmy Grugor</p>
         <section class="popup-area">
-          <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
+          <a class="button button--highlighted" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
               viewBox="0 0 7 13" fill="none">
               <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
             </svg> Mer info</a>
@@ -225,12 +233,12 @@
               vel non. Arcu eget eget et et semper dictumst velit.</p>
           </article>
         </section>
-      </div>
+      </section>
 
-      <div class="text-box__info">
+      <section class="text-box__info text-box__info--highlighted">
         <p>Klockan 14:00-15:20 Allt du behöver veta om Javascript med Ann Sylvester</p>
         <section class="popup-area">
-          <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
+          <a class="button button--highlighted" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
               viewBox="0 0 7 13" fill="none">
               <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
             </svg> Mer info</a>
@@ -243,12 +251,12 @@
               vel non. Arcu eget eget et et semper dictumst velit.</p>
           </article>
         </section>
-      </div>
+      </section>
 
-      <div class="text-box__info">
+      <section class="text-box__info text-box__info--highlighted">
         <p>Klockan 15:40-17:20 Det nya som kommer hända med Javascript med Tiffany Fox</p>
         <section class="popup-area">
-          <a class="button" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
+          <a class="button button--highlighted" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="13"
               viewBox="0 0 7 13" fill="none">
               <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
             </svg> Mer info</a>
@@ -261,16 +269,12 @@
               vel non. Arcu eget eget et et semper dictumst velit.</p>
           </article>
         </section>
-      </div>
+      </section>
 
+    </section>
+    <!-- Text 3 -->
 
-
-
-
-
-    </article>
-
-
+    <!-- Bilder personer -->
     <section class="heading-persons">
 
 
@@ -311,17 +315,17 @@
 
       </figure>
 
-      <figure class="image-container__img-5 image-container__img--highlighted" alt="Steve Grabbson">
-        <p>Steve Grabbson
-          <br>
-          Html
-        </p>
-      </figure>
+    
 
     </section>
+    <!-- Bilder personer -->
 
 
   </main>
+
+
+
+  <!-- footer -->
 
   <footer>
 
@@ -345,6 +349,7 @@
 
 
   </footer>
+  <!-- footer -->
 
 </body>
 

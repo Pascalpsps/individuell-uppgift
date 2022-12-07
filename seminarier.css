@@ -72,13 +72,16 @@ body {
   width: 13em;
   height: 13em;
   background-image: url('https://cdn.filestackcontent.com/xywPVuhQTuG00XQadzQX');
+  transition: 0.3s;
+  
 }
 
 .image-container>figure>p {
   color: white;
   background-color: rgb(46, 86, 219);
   text-align: center;
-  margin-top: 8em;
+  margin-top: 10.2em;
+  opacity: 0.85;
 
 
 }
@@ -90,6 +93,7 @@ body {
   width: 13em;
   height: 13em;
   background-image: url('https://cdn.filestackcontent.com/qr52A0ekR1e6q0HsGCJG');
+  transition: 0.3s;
 }
 
 
@@ -114,20 +118,12 @@ body {
   transition: 0.3s;
 }
 
-.image-container__img-5 {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  border-radius: 0.6em;
-  width: 13em;
-  height: 13em;
-  background-image: url('https://cdn.filestackcontent.com/sNmfs2jRlyCKF9oTYt6v');
-  transition: 0.3s;
 
-}
 
 
 .image-container__img--highlighted:hover {
   box-shadow: 0em 0em 0.7em 0.5px rgb(78, 78, 78);
+  transform: scale(1.1);
 }
 
 
@@ -157,9 +153,6 @@ body {
 
 
 .heading__more-text {
-  background: rgb(93, 170, 255);
-  background: linear-gradient(90deg, rgba(93, 170, 255, 0.6786064767703957) 0%, rgba(7, 122, 242, 0.6758053563222164) 100%);
-  border-radius: 0.5em;
 
   display: flex;
   flex-direction: row;
@@ -167,6 +160,12 @@ body {
   justify-content: space-between;
 
 
+
+}
+
+.heading__more-text > article{
+  text-align: start;
+ 
 }
 
 .heading__image {
@@ -174,8 +173,11 @@ body {
   height: 10em;
   border-radius: 0.5em;
   margin-right: 1em;
+  margin-left: 1em;
   margin-bottom: 1em;
   margin-top: 1em;
+  border: 0.3em solid rgb(93, 170, 255);
+  
 }
 
 
@@ -212,9 +214,34 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  background: rgb(93, 170, 255);
+  background: linear-gradient(90deg, rgba(93, 170, 255, 0.6786064767703957) 0%, rgba(7, 122, 242, 0.6758053563222164) 100%);
+  border-radius: 0.5em;
+transition: 0.3s;
 
 }
+
+
+section.text-box__info{
+  margin-bottom: 1.5em;
+}
+
+section.text-box__info > p{
+ 
+  font-size: 1.3em;
+  
+}
+
+section.text-box__info.text-box__info--highlighted:hover{
+
+box-shadow: 0em 0em 0.7em 0.5px rgb(78, 78, 78);}
+
+.text-box__time{
+  font-weight: bold;
+}
+
+
+
 
 a {
   text-decoration: none;
@@ -235,11 +262,12 @@ a {
 
 .button {
   transition: all 0.3s ease-out;
+  text-decoration: underline;
 }
 
-.button:hover {
+.button--highlighted:hover {
   color: rgb(46, 86, 219);
-  text-decoration: underline;
+  
 }
 
 #overlay {
@@ -293,7 +321,7 @@ a {
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 717px) {
 
   .inner-grid {
     grid-area: main;
@@ -330,6 +358,12 @@ a {
 
   .heading__image {
     margin-right: 0em;
+    margin-left: 0em;
+  }
+
+  .heading__more-text > article{
+    
+    margin-left: 1em;
   }
 
 
