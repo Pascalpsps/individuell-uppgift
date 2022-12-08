@@ -25,6 +25,9 @@ main {
     ;
 }
 
+
+/* Hero img  */
+
 .hero-image {
     grid-area: hero-img;
     background-image: url('https://appex.no/wp-content/uploads/2017/08/getting-started-programming-1920x1080.jpeg');
@@ -50,6 +53,11 @@ main {
 .hero-image__heding>p {
     font-size: 1.2em;
 }
+
+/* Hero img  */
+
+
+/* info och knapp container  */
 
 .info-container {
     grid-area: info-container;
@@ -97,13 +105,13 @@ main {
     border: 2px solid rgb(46, 86, 219);
     box-shadow: 0em 0em 0.7em 0.5px rgb(164, 164, 164);
     cursor: pointer;
-    
+
 }
 
+/* info och knapp container  */
 
 
-
-
+/* Bilder container  */
 .image-container {
     grid-area: image-slide;
     background: rgb(93, 170, 255);
@@ -139,7 +147,7 @@ main {
     transition: 0.3s;
 }
 
-.image-container__img-3  {
+.image-container__img-3 {
     background-image: url('./startsida img/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.webp');
     width: 15em;
     height: 15em;
@@ -166,12 +174,12 @@ main {
     background-color: rgb(46, 86, 219);
     text-align: center;
     opacity: 0.85;
-    
-  
-  
-  }
-  
 
+
+
+}
+
+/* Bilder container   */
 
 
 
@@ -221,7 +229,7 @@ main {
 
 
 
-
+    /* info och knapp container  */
 
     .info-container__image>img {
         width: 15em;
@@ -236,7 +244,7 @@ main {
         flex-direction: column;
     }
 
-
+    /* info och knapp container  */
 
 
 

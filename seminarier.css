@@ -37,96 +37,10 @@ body {
 
 }
 
-.heading-persons {
-
-  grid-area: heading-persons;
-  text-align: center;
-  margin-top: 6em;
-  margin-bottom: 3em;
-
-}
-
-.heading-persons>hr {
-  height: 10px;
-  background-color: rgb(46, 86, 219);
-}
-
-.Image-container {
-  grid-area: img-container;
-  background: rgb(93, 170, 255);
-  background: linear-gradient(90deg, rgba(93, 170, 255, 0.6786064767703957) 0%, rgba(7, 122, 242, 0.6758053563222164) 100%);
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
-
-  flex-wrap: wrap;
-}
-
-.image-container__img-1 {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  border-radius: 0.6em;
-  width: 13em;
-  height: 13em;
-  background-image: url('https://cdn.filestackcontent.com/xywPVuhQTuG00XQadzQX');
-  transition: 0.3s;
-  
-}
-
-.image-container>figure>p {
-  color: white;
-  background-color: rgb(46, 86, 219);
-  text-align: center;
-  margin-top: 10.2em;
-  opacity: 0.85;
-
-
-}
-
-.image-container__img-2 {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  border-radius: 0.6em;
-  width: 13em;
-  height: 13em;
-  background-image: url('https://cdn.filestackcontent.com/qr52A0ekR1e6q0HsGCJG');
-  transition: 0.3s;
-}
 
 
 
-.image-container__img-3 {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  border-radius: 0.6em;
-  width: 13em;
-  height: 13em;
-  background-image: url('https://media-exp1.licdn.com/dms/image/C5103AQG9kMc7tBQzIw/profile-displayphoto-shrink_200_200/0/1516436604852?e=1674086400&v=beta&t=gJxgWCC_WPRT5tXSYluBMHBUufw-2P-PzzydLxak7v8');
-  transition: 0.3s;
-}
-
-.image-container__img-4 {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  border-radius: 0.6em;
-  width: 13em;
-  height: 13em;
-  background-image: url('https://cdn.filestackcontent.com/inJ2ujTY6u0Gh3Mxxq4A');
-  transition: 0.3s;
-}
-
-
-
-
-.image-container__img--highlighted:hover {
-  box-shadow: 0em 0em 0.7em 0.5px rgb(78, 78, 78);
-  transform: scale(1.1);
-}
-
-
+/* Rubrik  */
 
 .heading {
 
@@ -163,9 +77,9 @@ body {
 
 }
 
-.heading__more-text > article{
+.heading__more-text>article {
   text-align: start;
- 
+
 }
 
 .heading__image {
@@ -177,8 +91,12 @@ body {
   margin-bottom: 1em;
   margin-top: 1em;
   border: 0.3em solid rgb(93, 170, 255);
-  
+
 }
+
+/* Rubrik  */
+
+
 
 
 .text-box-1 {
@@ -209,7 +127,7 @@ body {
 
 }
 
-
+/* text box seminarier rubrik */
 .text-box__info {
   display: flex;
   flex-direction: column;
@@ -217,32 +135,38 @@ body {
   background: rgb(93, 170, 255);
   background: linear-gradient(90deg, rgba(93, 170, 255, 0.6786064767703957) 0%, rgba(7, 122, 242, 0.6758053563222164) 100%);
   border-radius: 0.5em;
-transition: 0.3s;
+  transition: 0.3s;
 
 }
 
 
-section.text-box__info{
+section.text-box__info {
   margin-bottom: 1.5em;
 }
 
-section.text-box__info > p{
- 
+section.text-box__info>p {
+
   font-size: 1.3em;
-  
+
 }
 
-section.text-box__info.text-box__info--highlighted:hover{
+section.text-box__info.text-box__info--highlighted:hover {
 
-box-shadow: 0em 0em 0.7em 0.5px rgb(78, 78, 78);}
+  box-shadow: 0em 0em 0.5em 0.01em rgb(78, 78, 78);
+}
 
-.text-box__time{
+.text-box__time {
   font-weight: bold;
 }
 
 
 
+/* text box seminarier rubrik */
 
+
+
+
+/* popup funktion */
 a {
   text-decoration: none;
   color: black;
@@ -267,7 +191,7 @@ a {
 
 .button--highlighted:hover {
   color: rgb(46, 86, 219);
-  
+
 }
 
 #overlay {
@@ -311,10 +235,103 @@ a {
   right: 1em;
 }
 
+/* popup funktion */
+
+
+/* Bild personer  */
+
+.heading-persons {
+
+  grid-area: heading-persons;
+  text-align: center;
+  margin-top: 6em;
+  margin-bottom: 3em;
+
+}
+
+.heading-persons>hr {
+  height: 10px;
+  background-color: rgb(46, 86, 219);
+}
+
+.image-container {
+  grid-area: img-container;
+  background: rgb(93, 170, 255);
+  background: linear-gradient(90deg, rgba(93, 170, 255, 0.6786064767703957) 0%, rgba(7, 122, 242, 0.6758053563222164) 100%);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+
+  flex-wrap: wrap;
+}
+
+.image-container__img-1 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 0.6em;
+  width: 13em;
+  height: 13em;
+  background-image: url('./Seminarier/seminarier\ img/Jimmy.jpg');
+  transition: 0.3s;
+
+}
+
+
+
+.image-container__img-2 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 0.6em;
+  width: 13em;
+  height: 13em;
+  background-image: url('./Seminarier/seminarier\ img/Harvy.jpg');
+  transition: 0.3s;
+}
+
+
+
+.image-container__img-3 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 0.6em;
+  width: 13em;
+  height: 13em;
+  background-image: url('./Seminarier/seminarier\ img/Ann.jpg');
+  transition: 0.3s;
+}
+
+.image-container__img-4 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 0.6em;
+  width: 13em;
+  height: 13em;
+  background-image: url('./Seminarier/seminarier\ img/Chris.jpg');
+  transition: 0.3s;
+}
 
 
 
 
+.image-container__img--highlighted:hover {
+  box-shadow: 0em 0em 0.7em 0.5px rgb(78, 78, 78);
+  transform: scale(1.05);
+}
+
+.image-container>figure>p {
+  color: white;
+  background-color: rgb(46, 86, 219);
+  text-align: center;
+  margin-top: 10.2em;
+  opacity: 0.85;
+
+
+}
+
+/* Bild personer  */
 
 
 
@@ -342,6 +359,8 @@ a {
 
   }
 
+  /* Rubrik */
+
   .heading {
     border-radius: 0;
   }
@@ -361,12 +380,12 @@ a {
     margin-left: 0em;
   }
 
-  .heading__more-text > article{
-    
+  .heading__more-text>article {
+
     margin-left: 1em;
   }
 
-
+  /* Rubrik */
 
 
 }
