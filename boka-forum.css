@@ -139,7 +139,7 @@ input {
     visibility: hidden;
 }
 
-input:valid+.error-messeage+.form-food__choose-food {
+input#food2:checked+.error-messeage+.form-food__choose-food {
     visibility: visible;
 
 }
@@ -168,14 +168,9 @@ input:valid+.error-messeage+.form-food__choose-food {
     margin-top: 2em;
 }
 
-.form-food>input {
-    font-size: 1em;
-}
 
-.form-food>label {
-    font-size: 1.2em;
 
-}
+
 
 .form-food__choose-food {
     font-size: 1em;
@@ -218,12 +213,10 @@ option{
 
 
 .form-ticket>* {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
-.form-ticket>label {
-    font-size: 1.2em;
-}
+
 
 
 .form-ticket>hr {
@@ -248,7 +241,7 @@ option{
     font-size: 20px;
     padding: 0.4em;
     font-weight: bolder;
-
+margin-top: 1em;
     transition: 0.3s;
 }
 
@@ -284,7 +277,22 @@ option{
 
 /* Knappar */
 
-@media only screen and (max-width: 800px) {
+
+fieldset{
+    border: none;
+
+}
+
+fieldset >*{
+    margin-bottom: 1.5em;
+}
+
+label {
+   font-size: 1.2em;
+   
+}
+
+@media only screen and (max-width: 828px) {
     main {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -297,11 +305,14 @@ option{
 
     /* Person uppgifter */
     .form-personal-data__flex>input {
-        width: 18em;
+        width: 17em;
         height: 3em;
         transition: 0.5s;
 
     }
 
+    label {
+        font-size: 1.1em;
+     }
     /* Person uppgifter */
 }

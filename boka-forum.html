@@ -100,27 +100,29 @@
 
 
 
+                    <fieldset id="group-1">
+
+                        <label for="food1">Nej, Jag vill inte ha lunch under serminerier</label>
+                        <input type="radio" id="food1" name="group-1" value="fisk" required> <br>
 
 
-                    <label for="food1">Nej, Jag vill inte ha lunch under serminerier</label>
-                    <input type="radio" id="food1" name="food" value="fisk" required> <br>
+                        <label for="food2">Ja, jag vill ha lunch under seminariet</label>
+                        <input id="food2" type="radio" id="food2" name="group-1" value="kött">
 
 
-                    <label for="food2">Ja, jag vill ha lunch under seminariet</label>
-                    <input type="radio" id="food2" name="food" value="kött">
+                        <p class="error-messeage">Var vänligen att välj ett av alternativen</p>
 
+                        <div class="form-food__choose-food">
+                            <label for="mat">Välj typ av maträtt:</label>
+                            <select name="mat" id="mat">
+                                <option value="kött">Välj mat rätt</option>
+                                <option value="kött">Kött</option>
+                                <option value="fisk">Fisk</option>
+                                <option value="vegitariskt">Vegitarisk</option> <br>
 
-                    <p class="error-messeage">Var vänligen att välj ett av alternativen</p>
+                            </select>
 
-                    <div class="form-food__choose-food">
-                        <label for="mat">Välj typ av maträtt:</label>
-                        <select name="mat" id="mat">
-                            <option value="kött">Välj mat rätt</option>
-                            <option value="kött">Kött</option>
-                            <option value="fisk">Fisk</option>
-                            <option value="vegitariskt">Vegitarisk</option> <br>
-
-                        </select>
+                    </fieldset>
                     </div>
 
 
@@ -142,26 +144,26 @@
 
                     <h2 class="form-ticket__haeding">Biljetter för seminariet</h2>
 
-
-                    <label for="biljett1">Biljett för: 9/12 (200kr)</label>
-                    <input type="radio" id="biljett1" name="food" value="fisk" required> <br>
-
-
+                    <fieldset id="group-2">
+                        <label for="biljett1">Biljett för: 9/12 (200kr)</label>
+                        <input type="radio" id="biljett1" name="group-2" value="fisk" required> <br>
 
 
-                    <label for="biljett2">Biljett för: 10/12 (200kr)</label>
-                    <input type="radio" id="biljett2" name="food" value="fisk" required> <br>
-
-                    <label for="biljett3">Biljett för: 11/12 (250kr)</label>
-                    <input type="radio" id="biljett3" name="food" value="fisk" required> <br>
 
 
-                    <label for="biljett4">Biljett för hela seminariet: (500kr)</label>
-                    <input type="radio" id="biljett4" name="food" value="kött">
+                        <label for="biljett2">Biljett för: 10/12 (200kr)</label>
+                        <input type="radio" id="biljett2" name="group-2" value="fisk" required> <br>
 
+                        <label for="biljett3">Biljett för: 11/12 (250kr)</label>
+                        <input type="radio" id="biljett3" name="group-2" value="fisk" required> <br>
+
+
+                        <label for="biljett4">Biljett för hela seminariet: (500kr)</label>
+                        <input type="radio" id="biljett4" name="group-2" value="kött">
+                   
 
                     <p class="error-messeage">Var vänligen att välj ett av alternativen</p>
-
+                </fieldset>
 
                     <hr>
                     <label for="checkbox-1"> Ja, jag vill prenumerera på Bättre webb nyhetsbrev</label>

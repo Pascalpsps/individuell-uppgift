@@ -22,7 +22,7 @@ body {
   display: grid;
 
   grid-template-columns: 0.3fr 1fr 0.3fr;
-  grid-template-rows: 0.2fr 1fr 1fr 1fr 0.2fr 0.4fr;
+  grid-template-rows: 0.2fr 0.7fr 0.7fr 1fr 0.2fr 0.4fr;
   grid-template-areas:
     ". heading ."
     ". text-box-1 ."
@@ -139,6 +139,18 @@ body {
 
 }
 
+.text-box__info > p {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 3em;
+  margin-left: 3em;
+  
+}
+
+.text-box__bold-text{
+  font-weight: bold;
+}
+
 
 section.text-box__info {
   margin-bottom: 1.5em;
@@ -175,7 +187,7 @@ a {
 .popup-area {
   width: 40%;
   margin: 0 auto;
-  padding: 0em 0em 3em;
+  padding: 0em 0em 2em;
   text-align: center;
 }
 
@@ -381,7 +393,7 @@ a {
   }
 
   .heading__more-text>article {
-
+margin-right:1em ;
     margin-left: 1em;
   }
 
