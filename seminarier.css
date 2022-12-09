@@ -12,17 +12,12 @@ body {
 }
 
 
-
-
-
-
-
 .inner-grid {
   grid-area: main;
   display: grid;
 
   grid-template-columns: 0.3fr 1fr 0.3fr;
-  grid-template-rows: 0.2fr 0.7fr 0.7fr 1fr 0.2fr 0.4fr;
+  grid-template-rows: 0.1fr 0.5fr 0.5fr 0.5fr 0.1fr 0.3fr;
   grid-template-areas:
     ". heading ."
     ". text-box-1 ."
@@ -38,8 +33,6 @@ body {
 }
 
 
-
-
 /* Rubrik  */
 
 .heading {
@@ -49,8 +42,6 @@ body {
   font-size: 1.2em;
   text-align: center;
 
-
-
 }
 
 .heading__text {
@@ -59,12 +50,10 @@ body {
 }
 
 .heading>hr {
-  height: 10px;
-  background-color: rgb(46, 86, 219);
+  height: 0.3em;
+  background-color: var(--heading-line);
   margin-bottom: 2em;
 }
-
-
 
 .heading__more-text {
 
@@ -72,8 +61,6 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-
-
 
 }
 
@@ -90,13 +77,11 @@ body {
   margin-left: 1em;
   margin-bottom: 1em;
   margin-top: 1em;
-  border: 0.3em solid rgb(93, 170, 255);
+  border: 0.3em solid var(--border-img);
 
 }
 
 /* Rubrik  */
-
-
 
 
 .text-box-1 {
@@ -104,7 +89,7 @@ body {
 
 
   text-align: center;
-  border-bottom: 1px solid gray;
+  border-bottom: 0.1em solid var(--text-box-line);
 }
 
 
@@ -114,7 +99,7 @@ body {
 
 
   text-align: center;
-  border-bottom: 1px solid gray;
+  border-bottom: 0.1em solid var(--text-box-line);
 
 }
 
@@ -123,7 +108,7 @@ body {
 
 
   text-align: center;
-  border-bottom: 1px solid gray;
+  border-bottom: 0.1em solid var(--text-box-line);
 
 }
 
@@ -132,23 +117,24 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: rgb(93, 170, 255);
-  background: linear-gradient(90deg, rgba(93, 170, 255, 0.6786064767703957) 0%, rgba(7, 122, 242, 0.6758053563222164) 100%);
+  background: var(--container-color);
+  background: var(--conttainer-liner-gradient-color);
   border-radius: 0.5em;
   transition: 0.3s;
 
 }
 
-.text-box__info > p {
+.text-box__info>p {
   display: flex;
   justify-content: space-between;
-  margin-right: 3em;
-  margin-left: 3em;
-  
+  margin-right: 2em;
+  margin-left: 2em;
+
 }
 
-.text-box__bold-text{
+.text-box__bold-text {
   font-weight: bold;
+  margin-right: 1em;
 }
 
 
@@ -164,90 +150,38 @@ section.text-box__info>p {
 
 section.text-box__info.text-box__info--highlighted:hover {
 
-  box-shadow: 0em 0em 0.5em 0.01em rgb(78, 78, 78);
+  box-shadow: var(--box-shadow);
 }
 
 .text-box__time {
   font-weight: bold;
 }
 
-
-
 /* text box seminarier rubrik */
 
 
-
-
-/* popup funktion */
-a {
-  text-decoration: none;
-  color: black;
+/* details */
+.text-box__details {
+  margin-bottom: 1em;
 }
 
-.popup-area {
-  width: 40%;
-  margin: 0 auto;
-  padding: 0em 0em 2em;
-  text-align: center;
-}
+.text-box__show-more {
+  cursor: pointer;
 
-.popup__content {
-  overflow: auto;
-  color: black;
-}
-
-.button {
-  transition: all 0.3s ease-out;
   text-decoration: underline;
 }
 
-.button--highlighted:hover {
-  color: rgb(46, 86, 219);
-
+.text-box__details>p {
+  margin-left: 8em;
+  margin-right: 8em;
 }
 
-#overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 600ms;
-  visibility: hidden;
-  opacity: 0;
+.text-box__details>h3 {
+  margin-left: 8em;
+  margin-right: 8em;
 }
 
-#overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-.popup {
-  background-color: white;
-}
-
-.popup__content {
-  margin: 15% auto;
-  padding: 1.3em;
-  background: #fff;
-  border-radius: 0.6rem;
-  width: 15em;
-  position: relative;
-  transition: all 1s ease-in-out;
-}
-
-.close {
-  display: inline-block;
-  color: black;
-  width: 2em;
-  height: 2em;
-  position: absolute;
-  top: 1em;
-  right: 1em;
-}
-
-/* popup funktion */
+/* details */
 
 
 /* Bild personer  */
@@ -262,14 +196,14 @@ a {
 }
 
 .heading-persons>hr {
-  height: 10px;
-  background-color: rgb(46, 86, 219);
+  height: 0.3em;
+  background-color: var(--heading-line);
 }
 
 .image-container {
   grid-area: img-container;
-  background: rgb(93, 170, 255);
-  background: linear-gradient(90deg, rgba(93, 170, 255, 0.6786064767703957) 0%, rgba(7, 122, 242, 0.6758053563222164) 100%);
+  background: var(--container-color);
+  background: var(--conttainer-liner-gradient-color);
 
   display: flex;
   flex-direction: row;
@@ -329,13 +263,13 @@ a {
 
 
 .image-container__img--highlighted:hover {
-  box-shadow: 0em 0em 0.7em 0.5px rgb(78, 78, 78);
+  box-shadow: var(--box-shadow);
   transform: scale(1.05);
 }
 
 .image-container>figure>p {
-  color: white;
-  background-color: rgb(46, 86, 219);
+  color: var(--text-color-white);
+  background-color: var(--background-text-color);
   text-align: center;
   margin-top: 10.2em;
   opacity: 0.85;
@@ -344,10 +278,6 @@ a {
 }
 
 /* Bild personer  */
-
-
-
-
 
 
 @media screen and (max-width: 717px) {
@@ -393,11 +323,36 @@ a {
   }
 
   .heading__more-text>article {
-margin-right:1em ;
+    margin-right: 1em;
     margin-left: 1em;
   }
 
   /* Rubrik */
 
+
+  /* details */
+  .text-box__info>p {
+
+    flex-direction: column;
+
+  }
+
+  .text-box__bold-text {
+    font-weight: bold;
+    margin-right: 0em;
+    margin-bottom: 1em;
+  }
+
+  .text-box__details>p {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  .text-box__details>h3 {
+    margin-left: 1em;
+    margin-right: 1em;
+  }
+
+  /* details */
 
 }

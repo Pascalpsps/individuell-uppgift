@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./seminarier.css">
   <link rel="stylesheet" href="header.css">
   <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="root.css">
 
   <link rel="icon" type="image/x-icon" href="/startsida img/Nytt projekt (5).png">
 
@@ -19,22 +20,19 @@
   <!-- Header -->
 
   <header>
-
     <nav class="header-nav">
 
       <a class="header-nav__logo" href="./startsida.html"> Bättre Webb</a>
 
       <section class="header-nav__gropued-buttons">
 
-        <a class="header-nav__button--blue" href="./boka-forum.html"> Boka nu</a>
+        <a class="header-nav__button" href="./boka-forum.html"> Boka nu</a>
 
-        <a class="header-nav__button header-nav__button--highlighted" href="./seminarier.html"> Seminarier</a>
+        <a class="header-nav__button--none-background" href="./seminarier.html"> Seminarier</a>
 
-        <a class="header-nav__button header-nav__button--highlighted" href="./startsida.html"> Startsida</a>
+        <a class="header-nav__button--none-background" href="./startsida.html"> Startsida</a>
       </section>
-
     </nav>
-
   </header>
 
   <!-- Header -->
@@ -62,7 +60,6 @@
         </article>
         <img class="heading__image" src="./Seminarier/seminarier img/810d1e0dfe3d9194b4e9907962480942.jpg" alt="">
       </section>
-
     </section>
     <!-- Rubrik -->
 
@@ -72,70 +69,49 @@
       <h2>9/11 - Html</h2>
 
       <section class="text-box__info text-box__info--highlighted">
-        <p> <span class="text-box__bold-text">Klockan 10:00-11:00</span> 
-          
-         <span>Introduktion av Html med Steve Grabbson</span> </p>
+        <p> <span class="text-box__bold-text">Klockan 10:00-11:00</span>
+          <span>Introduktion av Html med Steve Grabbson</span>
+        </p>
 
-        <section class="popup-area">
-          <a class="button button--highlighted" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7"
-              height="13" viewBox="0 0 7 13" fill="none">
-              <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
-            </svg> Mer info</a>
-        </section>
 
-        <section class="popup" id="overlay">
-          <article class="popup__content">
-            <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
-            <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant
-              vel non. Arcu eget eget et et semper dictumst velit.</p>
-          </article>
-        </section>
+        <details class="text-box__details">
+          <summary class="text-box__show-more">Visa mer info
+          </summary>
 
+          <h3>Introduktion av Html med Steve Grabbson</h3>
+          <p>Vill du få en inblick vad html är så är detta en föeläsning för dig. Vi kommer gå igenom det mest
+            grundläggande vad html är och hur det används i din hemsida. Denna föreläsning är perfekt för dig som vill
+            börja med programering.</p>
+        </details>
       </section>
 
       <section class="text-box__info text-box__info--highlighted">
-        <p> <span class="text-box__bold-text"> Klockan 12:30-14:00 </span> <span>Möjligheter med Html med Josefine Smith</span> </p>
+        <p> <span class="text-box__bold-text"> Klockan 12:30-14:00 </span> <span>Möjligheter med Html med Josefine
+            Smith</span> </p>
 
-        <section class="popup-area">
-          <a class="button button--highlighted" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7"
-              height="13" viewBox="0 0 7 13" fill="none">
-              <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
-            </svg> Mer info</a>
-        </section>
+        <details class="text-box__details">
+          <summary class="text-box__show-more">Visa mer info</summary>
 
-        <section class="popup" id="overlay">
-          <article class="popup__content">
-            <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
-            <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant
-              vel non. Arcu eget eget et et semper dictumst velit.</p>
-          </article>
-        </section>
-
+          <h3>Möjligheter med Html med Josefine Smith</h3>
+          <p>Vi kommer gå in på html på djupet och visa vilka möjligheter man har när man jobbar med det. Du kommer
+            bli förvånad av vilka kreationar man kan åstakomma med html som grundpelare i din framtida hemsida. </p>
+        </details>
       </section>
 
       <section class="text-box__info text-box__info--highlighted">
-        <p> <span class="text-box__bold-text">Klockan 14:20-17:20 </span> <span> En värld av Html med Steve Mcgreen </span></p>
+        <p> <span class="text-box__bold-text">Klockan 14:20-17:20 </span> <span> En värld av Html med Steve Mcgreen
+          </span></p>
 
-        <section class="popup-area">
-          <a class="button button--highlighted" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7"
-              height="13" viewBox="0 0 7 13" fill="none">
-              <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
-            </svg> Mer info</a>
-        </section>
+        <details class="text-box__details">
+          <summary class="text-box__show-more">Visa mer info</summary>
 
-        <section class="popup" id="overlay">
-          <article class="popup__content">
-            <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
-            <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant
-              vel non. Arcu eget eget et et semper dictumst velit.</p>
-          </article>
-        </section>
-
+          <h3>En värld av Html med Steve Mcgreen</h3>
+          <p> Under förelsäningn kommer vi gå in på hur html såg ut förr i tiden och hur det ser ut idag. Vad används
+            igentligen html till och hur ser framtiden ut. Allt detta och lite till kommer vi gå igenom. </p>
+        </details>
       </section>
-
     </section>
     <!-- Text box 1 -->
-
 
 
     <!-- Text box 2 -->
@@ -143,58 +119,45 @@
       <h2>10/11 - Css</h2>
 
       <section class="text-box__info text-box__info--highlighted">
-        <p> <span class="text-box__bold-text"> Klockan 09:00-10:30 </span> <span> Styla Css som ett proffs med Lee Hansen </span></p>
+        <p> <span class="text-box__bold-text"> Klockan 09:00-10:30 </span> <span> Styla Css som ett proffs med Lee
+            Hansen </span></p>
 
-        <section class="popup-area">
-          <a class="button button--highlighted" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7"
-              height="13" viewBox="0 0 7 13" fill="none">
-              <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
-            </svg> Mer info</a>
-        </section>
+        <details class="text-box__details">
+          <summary class="text-box__show-more">Visa mer info</summary>
 
-        <section class="popup" id="overlay">
-          <article class="popup__content">
-            <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
-            <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant
-              vel non. Arcu eget eget et et semper dictumst velit.</p>
-          </article>
-        </section>
+          <h3>Styla Css som ett proffs med Lee
+            Hansen</h3>
+          <p> Under föreläsningen kommer vi gå igenom hur man stylar css som ett riktigt proffs. Möjligheterna med
+            designen i css är oändlig, man behöver bara de rätta verktygen för att få sin design att bli en verklighet.
+            Lee Hansen kommer även visa upp sina bästa designer som han har skapat. </p>
+        </details>
       </section>
 
       <section class="text-box__info text-box__info--highlighted">
-        <p> <span class="text-box__bold-text">Klockan 12:20-15:00 </span> <span> Förjupning av Css med Chris Hemfer </span></p>
-        <section class="popup-area">
-          <a class="button button--highlighted" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7"
-              height="13" viewBox="0 0 7 13" fill="none">
-              <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
-            </svg> Mer info</a>
-        </section>
+        <p> <span class="text-box__bold-text">Klockan 12:20-15:00 </span> <span> Förjupning av Css med Chris Hemfer
+          </span></p>
 
-        <section class="popup" id="overlay">
-          <article class="popup__content">
-            <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
-            <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant
-              vel non. Arcu eget eget et et semper dictumst velit.</p>
-          </article>
-        </section>
+        <details class="text-box__details">
+          <summary class="text-box__show-more">Visa mer info</summary>
+
+          <h3>Förjupning av Css med Chris Hemfer</h3>
+          <p> Under föreläsningen kommer vi gå igenom hur man använder Css mer grundligt och vilka möjligheter man har
+            med det. Vi kommer gå igenom hur man fomar en hemsida med hjälp av css. Vi kommer även visa hur man gör
+            animationer och effekter. </p>
+        </details>
       </section>
 
       <section class="text-box__info text-box__info--highlighted">
-        <p> <span class="text-box__bold-text"> Klockan 14:20-17:20 </span> <span> Tänk nytt med Css med Harvy Tank </span></p>
-        <section class="popup-area">
-          <a class="button button--highlighted" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7"
-              height="13" viewBox="0 0 7 13" fill="none">
-              <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
-            </svg> Mer info</a>
-        </section>
+        <p> <span class="text-box__bold-text"> Klockan 14:20-17:20 </span> <span> Tänk nytt med Css med Harvy Tank
+          </span></p>
+        <details class="text-box__details">
+          <summary class="text-box__show-more">Visa mer info</summary>
 
-        <section class="popup" id="overlay">
-          <article class="popup__content">
-            <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
-            <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant
-              vel non. Arcu eget eget et et semper dictumst velit.</p>
-          </article>
-        </section>
+          <h3>Tänk nytt med Css med Harvy Tank</h3>
+          <p> Hur tänker man igentligen utanför boxen när man använder css? Det finns väldigt många sätt hur man uformar
+            en sida och hur man ska använda sin css därefter. Vi kommer gå igenom olika sätt hur man kan styla och
+            utforma sin hemsida.</p>
+        </details>
       </section>
 
 
@@ -207,75 +170,59 @@
       <h2>11/11 - Javascript</h2>
 
       <section class="text-box__info text-box__info--highlighted">
-        <p> <span class="text-box__bold-text"> Klockan 8:30-10:00 </span> <span> Hur använder man Javascript med Swee Jao </span></p>
-        <section class="popup-area">
-          <a class="button button--highlighted" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7"
-              height="13" viewBox="0 0 7 13" fill="none">
-              <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
-            </svg> Mer info</a>
-        </section>
+        <p> <span class="text-box__bold-text"> Klockan 8:30-10:00 </span> <span> Hur använder man Javascript med Swee
+            Jao </span></p>
+        <details class="text-box__details">
+          <summary class="text-box__show-more">Visa mer info</summary>
 
-        <section class="popup" id="overlay">
-          <article class="popup__content">
-            <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
-            <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant
-              vel non. Arcu eget eget et et semper dictumst velit.</p>
-          </article>
-        </section>
+          <h3>Hur använder man Javascript med Swee
+            Jao</h3>
+          <p>Vi kommer gå igenom det mest grundläggande hur man använder javascript. Vi kommer visa vad det används till
+            och visa några enkla kreationer. Swee Jao kommer även under föreläsningen programera några enkla kreationer
+            med hjälp av javascript. </p>
+        </details>
       </section>
 
       <section class="text-box__info text-box__info--highlighted">
-        <p> <span class="text-box__bold-text">Klockan 10:30-11:15 </span> <span> Bygg fantastiska grejer med Javascript Jimmy Grugor </span></p>
-        <section class="popup-area">
-          <a class="button button--highlighted" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7"
-              height="13" viewBox="0 0 7 13" fill="none">
-              <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
-            </svg> Mer info</a>
-        </section>
+        <p> <span class="text-box__bold-text">Klockan 10:30-11:15 </span> <span> Bygg fantastiska grejer med Javascript
+            Jimmy Grugor </span></p>
+        <details class="text-box__details">
+          <summary class="text-box__show-more">Visa mer info</summary>
 
-        <section class="popup" id="overlay">
-          <article class="popup__content">
-            <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
-            <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant
-              vel non. Arcu eget eget et et semper dictumst velit.</p>
-          </article>
-        </section>
+          <h3>Bygg fantastiska grejer med Javascript</h3>
+          <p> Jimmy Grugor kommer visa vilka kreationer han har gjort med hjälp av javascript.Vi kommer gå igenom varför
+            javascript behövs när man skapar hemsidor och hur javascript, css och html sammarbetar för att bygga upp en
+            hemsida. </p>
+        </details>
       </section>
 
       <section class="text-box__info text-box__info--highlighted">
-        <p> <span class="text-box__bold-text">Klockan 14:00-15:20 </span> <span> Allt du behöver veta om Javascript med Ann Sylvester </span></p>
-        <section class="popup-area">
-          <a class="button button--highlighted" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7"
-              height="13" viewBox="0 0 7 13" fill="none">
-              <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
-            </svg> Mer info</a>
-        </section>
+        <p> <span class="text-box__bold-text">Klockan 14:00-15:20 </span> <span> Allt du behöver veta om Javascript med
+            Ann Sylvester </span></p>
+        <details class="text-box__details">
+          <summary class="text-box__show-more">Visa mer info</summary>
 
-        <section class="popup" id="overlay">
-          <article class="popup__content">
-            <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
-            <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant
-              vel non. Arcu eget eget et et semper dictumst velit.</p>
-          </article>
-        </section>
+          <h3>Allt du behöver veta om Javascript med
+            Ann Sylvester</h3>
+          <p>Vi kommer gå igenom allt du behöver veta om Javascript. Hur man använde det förr i tiden och hur man
+            använder det idag. Vi kommer även gå igenom historian om Javascript och varför det är så viktigt att kunna
+            det.</p>
+        </details>
       </section>
 
       <section class="text-box__info text-box__info--highlighted">
-        <p> <span class="text-box__bold-text">Klockan 15:40-17:20 </span> <span> Det nya som kommer hända med Javascript med Tiffany Fox </span></p>
-        <section class="popup-area">
-          <a class="button button--highlighted" href="#overlay"><svg xmlns="http://www.w3.org/2000/svg" width="7"
-              height="13" viewBox="0 0 7 13" fill="none">
-              <path d="M5.5 6.5L0.5 1.5V11.5L5.5 6.5Z" stroke="white" />
-            </svg> Mer info</a>
-        </section>
+        <p> <span class="text-box__bold-text">Klockan 15:40-17:20 </span> <span> Fantastiska kreationer med hjälp av
+            Javascript.
+            med Tiffany Fox </span></p>
 
-        <section class="popup" id="overlay">
-          <article class="popup__content">
-            <h2>LOREM IPSUM</h2><a class="close" href="#">&times;</a>
-            <p>Lorem ipsum dolor sit amet consectetur. Sollicitudin donec neque pharetra fermentum tristique habitant
-              vel non. Arcu eget eget et et semper dictumst velit.</p>
-          </article>
-        </section>
+        <details class="text-box__details">
+          <summary class="text-box__show-more">Visa mer info</summary>
+
+          <h3>Fantastiska kreationer med hjälp av Javascript</h3>
+          <p> Under förlsäningen kommer vi gå igeonom de mest avanserade som har gjorts med Javascript och hur de tänkte
+            när de skapade sina kreationer. Tiffany Fox kommer även visa sitt mest avanserade projekt hon har gjort med
+            hjlp av javascript.</p>
+        </details>
       </section>
 
     </section>
@@ -292,28 +239,31 @@
     <section class="image-container">
 
 
-      <figure class="image-container__img-1 image-container__img--highlighted" a role="img" aria-label="[Person-Jimmy-Grugor]">
+      <figure class="image-container__img-1 image-container__img--highlighted" a role="img"
+        aria-label="[Person-Jimmy-Grugor]">
         <p>Jimmy Grugor
           <br>
           Javascript
         </p>
       </figure>
 
-      <figure class="image-container__img-2 image-container__img--highlighted"  role="img" aria-label="[Person-Harvy-Tank]">
+      <figure class="image-container__img-2 image-container__img--highlighted" role="img"
+        aria-label="[Person-Harvy-Tank]">
         <p>Harvy Tank
           <br>
           Css
         </p>
       </figure>
 
-      <figure class="image-container__img-3 image-container__img--highlighted"  role="img" aria-label="[Person-Ann-Sylvester]">
+      <figure class="image-container__img-3 image-container__img--highlighted" role="img"
+        aria-label="[Person-Ann-Sylvester]">
         <p>Ann Sylvester
           <br>
           Javascript
         </p>
       </figure>
 
-      <figure class="image-container__img-4 image-container__img--highlighted"  role="img" aria-label="[Chris-Hemfer]">
+      <figure class="image-container__img-4 image-container__img--highlighted" role="img" aria-label="[Chris-Hemfer]">
         <p>Chris Hemfer
           <br>
           Css
@@ -321,16 +271,9 @@
 
 
       </figure>
-
-
-
     </section>
     <!-- Bilder personer -->
-
-
   </main>
-
-
 
   <!-- footer -->
 
@@ -345,27 +288,14 @@
         <p> Vi har ett brett kontaktnät med branschens främsta programerare. </p>
         <p> För mer frågor kontakta oss via mail: <u> battrewebb@gmail.com </u></p>
       </article>
-
-
-
-
-
-
       <section class="footer-container__logos">
         <img src="./startsida img/instagram.png" alt="instagram">
         <img src="./startsida img/facebook.png" alt="facebook">
       </section>
-
     </section>
-
   </footer>
-
-
-
-
 
   <!-- footer -->
 
 </body>
-
 </html>

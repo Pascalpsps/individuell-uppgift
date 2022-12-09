@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="boka-forum.css">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="root.css">
 
     <link rel="icon" type="image/x-icon" href="/startsida img/Nytt projekt (5).png">
     <title>Bättre webb</title>
@@ -16,21 +17,18 @@
 
     <!-- Header -->
     <header>
-
         <nav class="header-nav">
 
             <a class="header-nav__logo" href="startsida.html"> Bättre Webb</a>
 
-
             <section class="header-nav__gropued-buttons">
 
-                <a class="header-nav__button--blue" href="./boka-forum.html"> Boka nu</a>
+                <a class="header-nav__button" href="./boka-forum.html"> Boka nu</a>
 
-                <a class="header-nav__button header-nav__button--highlighted" href="./seminarier.html"> Seminarier</a>
+                <a class="header-nav__button--none-background" href="./seminarier.html"> Seminarier</a>
 
-                <a class="header-nav__button header-nav__button--highlighted" href="./startsida.html"> Startsida</a>
+                <a class="header-nav__button--none-background" href="./startsida.html"> Startsida</a>
             </section>
-
         </nav>
     </header>
     <!-- Header -->
@@ -52,8 +50,6 @@
                 <section class="form-personal-data">
 
                     <h2 class="form-personal-data__heading"> Person uppgifter:</h2>
-
-
 
                     <div class="form-personal-data__flex form-personal-data__flex--highlighted">
                         <label for="name">Namn:</label>
@@ -78,15 +74,12 @@
                         <br>
                     </div>
 
-
                     <div class="form-personal-data__flex form-personal-data__flex--highlighted">
                         <label for="adress">Adress:</label>
                         <input type="adress" placeholder="Adress" id="adress" name="adress" minlength="5" required>
                         <p class="error-messeage">Var vänligen att skriv in ditt telefonummer</p>
                         <br>
                     </div>
-
-
                 </section>
 
                 <!-- Person uppgifter -->
@@ -97,8 +90,6 @@
                 <section class="form-food">
 
                     <h2 class="form-food__heading"> Mat och allergier</h2>
-
-
 
                     <fieldset id="group-1">
 
@@ -119,17 +110,9 @@
                                 <option value="kött">Kött</option>
                                 <option value="fisk">Fisk</option>
                                 <option value="vegitariskt">Vegitarisk</option> <br>
-
                             </select>
-
                     </fieldset>
                     </div>
-
-
-
-
-
-
                     <p class="form-food__special-food-heading">Vänligen skriv dina allergier här:</p>
                     <textarea name="message" rows="10" cols="30"></textarea>
 
@@ -160,10 +143,10 @@
 
                         <label for="biljett4">Biljett för hela seminariet: (500kr)</label>
                         <input type="radio" id="biljett4" name="group-2" value="kött">
-                   
 
-                    <p class="error-messeage">Var vänligen att välj ett av alternativen</p>
-                </fieldset>
+
+                        <p class="error-messeage">Var vänligen att välj ett av alternativen</p>
+                    </fieldset>
 
                     <hr>
                     <label for="checkbox-1"> Ja, jag vill prenumerera på Bättre webb nyhetsbrev</label>
@@ -173,42 +156,23 @@
                     <!-- Biljett uppgifter -->
 
                     <!-- Knappar -->
-                    <button class="form__button-submit--highlighted" type="submit"> Boka nu</button>
+                    <button class="form__button-submit" type="submit"> Boka nu</button>
 
-                    <button class=" form__button-reset--highlighted" type="reset"> Avbryt</button>
+                    <button class=" form__button-reset--transparent" type="reset"> Avbryt</button>
 
                     <!-- Knappar -->
                 </section>
-
-
         </section>
-
-
-
-
-
-
-
         </form>
-
         </section>
-
-
-
-
-
         </section>
-
-
     </main>
 
 
     <!-- footer -->
 
     <footer>
-
         <section class="footer-container">
-
             <article class="footer-container__text">
                 <h1>Bättre webb.</h1>
                 <hr>
@@ -218,20 +182,13 @@
             </article>
 
 
-
-
-
-
             <section class="footer-container__logos">
                 <img src="./startsida img/instagram.png" alt="instagram">
                 <img src="./startsida img/facebook.png" alt="facebook">
             </section>
-
         </section>
-
     </footer>
 
     <!-- footer -->
 </body>
-
 </html>

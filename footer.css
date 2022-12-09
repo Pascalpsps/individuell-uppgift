@@ -6,13 +6,11 @@
 
 .footer-container {
   background-color: white;
-  border-top: 1px solid grey;
+  border-top: 0.1em solid var(--text-box-line);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
- 
-
 
 }
 
@@ -29,8 +27,8 @@
 }
 
 .footer-container__text>hr {
-  background-color: rgb(46, 86, 219);
-  height: 3px;
+  background-color: var(--background-text-color);
+  height: 0.2em;
 
 }
 
@@ -39,24 +37,13 @@
 
 }
 
-/*.footer__buttons {
-background-color: white;
-border: white;
-} 
-*/
+
 
 
 
 
 
 @media only screen and (max-width: 754px) {
-
-
-
-
-
-
-
 
 
   .footer-container {

@@ -35,15 +35,13 @@ main {
     background-position: center;
     background-size: cover;
 
-
 }
 
 
-
 .hero-image__heding {
-    color: white;
-    background: rgb(93, 170, 255);
-    background: linear-gradient(90deg, rgba(93, 170, 255, 0.6786064767703957) 0%, rgba(7, 122, 242, 0.6758053563222164) 100%);
+    color: var(--button-text-color);
+    background: var(--container-color);
+    background: var(--conttainer-liner-gradient-color);
 
     padding: 1.5em;
     text-align: center;
@@ -81,15 +79,15 @@ main {
     width: 20em;
     height: 15em;
     border-radius: 0.6em;
-    border: 9px solid rgb(93, 170, 255);
+    border: 0.4em solid var(--border-img);
 }
 
 .info-container__button {
-    border: 2px solid rgb(46, 86, 219);
-    background-color: rgb(46, 86, 219);
-    color: white;
+    border: 0.1em solid var(--button-color);
+    background-color: var(--button-color);
+    color: var(--button-text-color);
     border-radius: 10em;
-    margin-right: 1em;
+
     padding: 0.4em 1em;
     font-size: 1.1em;
     text-decoration: none;
@@ -99,11 +97,11 @@ main {
 }
 
 .info-container__button:hover {
-    background-color: white;
-    color: rgb(46, 86, 219);
+    background-color: var(--button-color-white);
+    color: var(--button-color);
     font-weight: bolder;
-    border: 2px solid rgb(46, 86, 219);
-    box-shadow: 0em 0em 0.7em 0.5px rgb(164, 164, 164);
+    border: 0.1em solid var(--button-color);
+    box-shadow: var(--box-shadow-button);
     cursor: pointer;
 
 }
@@ -114,8 +112,8 @@ main {
 /* Bilder container  */
 .image-container {
     grid-area: image-slide;
-    background: rgb(93, 170, 255);
-    background: linear-gradient(90deg, rgba(93, 170, 255, 0.6786064767703957) 0%, rgba(7, 122, 242, 0.6758053563222164) 100%);
+    background: var(--container-color);
+    background: var(--conttainer-liner-gradient-color);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -123,13 +121,11 @@ main {
 
 }
 
-
-
 .image-container__img-1 {
     background-image: url('./startsida img/3272512706.jpg');
     width: 15em;
     height: 15em;
-    color: white;
+    color: var(--button-text-color);
     background-size: cover;
     text-align: center;
     border-radius: 0.6em;
@@ -140,7 +136,7 @@ main {
     background-image: url('./startsida img/491239_1280.jpg');
     width: 15em;
     height: 15em;
-    color: white;
+    color: var(--button-text-color);
     background-size: cover;
     text-align: center;
     border-radius: 0.6em;
@@ -151,41 +147,30 @@ main {
     background-image: url('./startsida img/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.webp');
     width: 15em;
     height: 15em;
-    color: white;
+    color: var(--button-text-color);
     background-size: cover;
     text-align: center;
     border-radius: 0.6em;
     transition: 0.3s;
 
-
 }
 
-
-
 .image-container__img--highlighted:hover {
-    box-shadow: 0em 0em 0.7em 0.5px rgb(78, 78, 78);
+    box-shadow: var(--box-shadow);
 
     transform: scale(1.05);
 }
 
 
 .image-container>figure>p {
-    color: white;
-    background-color: rgb(46, 86, 219);
+    color: var(--button-text-color);
+    background-color: var(--background-text-color);
     text-align: center;
     opacity: 0.85;
-
-
 
 }
 
 /* Bilder container   */
-
-
-
-
-
-
 
 
 @media only screen and (max-width: 910px) and (min-width: 754px) {
@@ -193,18 +178,11 @@ main {
 
     .info-container {
 
-
         display: flex;
         flex-direction: column;
-
-
-
-
     }
 
 }
-
-
 
 
 @media only screen and (max-width: 754px) {
@@ -224,18 +202,13 @@ main {
     }
 
 
-
-
-
-
-
     /* info och knapp container  */
 
     .info-container__image>img {
         width: 15em;
         height: 10em;
 
-        border: 9px solid rgb(93, 170, 255);
+
     }
 
     .info-container {
@@ -245,13 +218,6 @@ main {
     }
 
     /* info och knapp container  */
-
-
-
-
-
-
-
 
 
 }

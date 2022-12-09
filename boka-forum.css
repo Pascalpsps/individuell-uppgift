@@ -12,14 +12,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
 main {
     grid-area: main;
     display: grid;
@@ -29,8 +21,6 @@ main {
         ". form ."
 
     ;
-
-
 }
 
 .form {
@@ -45,19 +35,19 @@ main {
 /* Valid and invalid */
 
 input:invalid {
-    outline: 2px solid red
+    outline: 2px solid rgb(250, 2, 2)
 }
 
 
 input:valid {
-    border-bottom: 5px solid green;
+    border-bottom: 5px solid rgb(1, 134, 1);
 }
-
-
 
 .error-messeage {
 
     color: rgb(145, 43, 43);
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 input:invalid+.error-messeage {
@@ -78,14 +68,12 @@ input:valid+.error-messeage {
 
     text-align: center;
     align-self: center;
-    border-bottom: 10px solid rgb(46, 86, 219);
+    border-bottom: 0.3em solid var(--heading-line);
 
     margin: 0;
     margin-left: 32px;
     margin-right: 32px;
     font-size: 1.7em;
-
-
 }
 
 /* Rubrik */
@@ -95,10 +83,10 @@ input:valid+.error-messeage {
 
 .form-personal-data {
     grid-area: form-personal-data;
-    border: 1px solid black;
+    border: 0.1em solid var(--container-border-form-color);
     text-align: center;
-    background: rgb(93, 170, 255);
-    background: linear-gradient(90deg, rgba(93, 170, 255, 0.6786064767703957) 0%, rgba(7, 122, 242, 0.6758053563222164) 100%);
+    background: var(--container-color);
+    background: var(--conttainer-liner-gradient-color);
     border-radius: 0.5em;
 
 }
@@ -106,6 +94,7 @@ input:valid+.error-messeage {
 input {
     font-size: 0.8em;
     margin-top: 0.2em;
+    border-radius: 0.2em;
 }
 
 .form-personal-data__flex {
@@ -114,10 +103,7 @@ input {
     align-items: center;
     font-size: 1.1em;
 
-
-
 }
-
 
 .form-personal-data__flex>input {
     width: 30em;
@@ -127,7 +113,7 @@ input {
 }
 
 .form-personal-data__flex--highlighted>input:focus {
-    box-shadow: 0em 0em 0.7em 0.5px rgb(97, 97, 97);
+    box-shadow: var(--box-shadow);
 
 }
 
@@ -147,10 +133,10 @@ input#food2:checked+.error-messeage+.form-food__choose-food {
 
 .form-food {
     grid-area: form-food;
-    border: 1px solid black;
+    border: 0.1em solid var(--container-border-form-color);
     text-align: center;
-    background: rgb(93, 170, 255);
-    background: linear-gradient(90deg, rgba(93, 170, 255, 0.6786064767703957) 0%, rgba(7, 122, 242, 0.6758053563222164) 100%);
+    background: var(--container-color);
+    background: var(--conttainer-liner-gradient-color);
     border-radius: 0.5em;
 }
 
@@ -168,31 +154,27 @@ input#food2:checked+.error-messeage+.form-food__choose-food {
     margin-top: 2em;
 }
 
-
-
-
-
 .form-food__choose-food {
     font-size: 1em;
 
 }
 
-select{
+select {
     font-weight: bold;
     background-color: transparent;
-    border: 0.2em solid black;
+    border: 0.2em solid rgb(7, 7, 7);
     border-radius: 0.5em;
     padding: 0 1em 0;
-    
+
     cursor: pointer;
     transition: 0.3s;
 }
 
-select:hover{
-    box-shadow: inset 0em 0em 0.7em 0.1px rgb(164, 164, 164);
+select:hover {
+    box-shadow: inset var(--box-shadow-button);
 }
 
-option{
+option {
     font-weight: bold;
 }
 
@@ -203,25 +185,21 @@ option{
 .form-ticket {
 
     grid-area: form-ticket;
-    border: 1px solid black;
+    border: 0.1em solid var(--container-border-form-color);
     text-align: center;
-    background: rgb(93, 170, 255);
-    background: linear-gradient(90deg, rgba(93, 170, 255, 0.6786064767703957) 0%, rgba(7, 122, 242, 0.6758053563222164) 100%);
+    background: var(--container-color);
+    background: var(--conttainer-liner-gradient-color);
     border-radius: 0.5em;
 }
-
-
 
 .form-ticket>* {
     margin-bottom: 1em;
 }
 
 
-
-
 .form-ticket>hr {
     height: 3px;
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(243, 243, 243);
     margin-left: 1.5em;
     margin-right: 1.5em;
 
@@ -230,69 +208,79 @@ option{
 /* Biljett uppgifter */
 
 /* Knappar */
-.form__button-submit--highlighted {
-    border: 2px solid rgb(46, 86, 219);
-    background-color: rgb(46, 86, 219);
-    color: white;
+.form__button-submit {
+    border: 0.1em solid var(--button-color);
+    background-color: var(--button-color);
+    color: var(--text-color-white);
     border-radius: 10em;
 
     width: 8em;
     height: 2.5em;
-    font-size: 20px;
+    font-size: 1.2em;
     padding: 0.4em;
     font-weight: bolder;
-margin-top: 1em;
+    margin-top: 1em;
     transition: 0.3s;
 }
 
-.form__button-submit--highlighted:hover {
-    background-color: white;
-    color: rgb(46, 86, 219);
+.form__button-submit:hover {
+    background-color: var(--button-color-white);
+    color: var(--button-color);
     font-weight: bolder;
-    border: 2px solid rgb(46, 86, 219);
-    box-shadow: 0em 0em 0.7em 0.5px rgb(164, 164, 164);
+    border: 0.1em solid var(--button-color);
+    box-shadow: var(--box-shadow-button);
     cursor: pointer;
 }
 
 
-.form__button-reset--highlighted {
+.form__button-reset--transparent {
     background-color: transparent;
-    color: white;
+    color: var(--text-color-white);
     border-radius: 10em;
 
     width: 5em;
     height: 2.5em;
-    font-size: 20px;
+    font-size: 1.2em;
     padding: 0.4em;
     font-weight: bolder;
 
     transition: 0.3s;
 }
 
-.form__button-reset--highlighted:hover {
+.form__button-reset--transparent:hover {
 
-    box-shadow: 0em 0em 0.7em 0.5px rgb(164, 164, 164);
+    box-shadow: var(--box-shadow-button);
     cursor: pointer;
 }
 
 /* Knappar */
 
 
-fieldset{
+fieldset {
     border: none;
 
 }
 
-fieldset >*{
+fieldset>* {
     margin-bottom: 1.5em;
 }
 
 label {
-   font-size: 1.2em;
-   
+    font-size: 1.2em;
+
 }
 
-@media only screen and (max-width: 828px) {
+@media only screen and (max-width: 828px) and (min-width:745px) {
+    .form-personal-data__flex>input {
+        width: 19.8em;
+        height: 3em;
+        transition: 0.5s;
+
+    }
+}
+
+
+@media only screen and (max-width: 745px) {
     main {
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -303,16 +291,38 @@ label {
 
     }
 
+
     /* Person uppgifter */
     .form-personal-data__flex>input {
         width: 17em;
         height: 3em;
         transition: 0.5s;
-
     }
 
     label {
         font-size: 1.1em;
-     }
+    }
+
     /* Person uppgifter */
+
+
+    /* Valid and invalid */
+    .error-messeage {
+
+        color: rgb(145, 43, 43);
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-bottom: 0em;
+    }
+
+    /* Valid and invalid */
+
+
+    /* Mat uppgifter */
+    .form-food__special-food-heading {
+        font-weight: bold;
+        margin-top: 0em;
+    }
+
+    /* Mat uppgifter */
 }
