@@ -1,0 +1,17 @@
+:root {
+   
+    --text-color:rgb(4, 4, 4);
+    --button-color:rgb(46, 86, 219);
+    --button-color-white:rgb(243, 243, 243);
+    --button-text-color:rgb(243, 243, 243);
+    --text-color-white:rgb(243, 243, 243);
+    --container-color:rgb(93, 170, 255);
+    --conttainer-liner-gradient-color:linear-gradient(90deg, rgba(93, 170, 255, 0.6786064767703957) 0%, rgba(7, 122, 242, 0.6758053563222164) 100%);
+    --border-img:rgb(93, 170, 255);
+    --background-text-color:rgb(46, 86, 219);
+    --box-shadow: 0em 0em 0.7em 0.1em rgb(137, 137, 137);
+    --box-shadow-button:0em 0em 0.7em 0.1em rgb(182, 182, 182);
+    --container-border-form-color:rgb(7, 7, 7);
+    --heading-line:rgb(46, 86, 219);
+    --text-box-line:rgb(123, 123, 123);
+  }

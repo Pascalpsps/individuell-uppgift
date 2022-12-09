@@ -1,0 +1,328 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    display: grid;
+    height: 150vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 7em 3fr 15em;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 0.3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        ". form ."
+
+    ;
+}
+
+.form {
+    grid-area: form;
+
+}
+
+.form>* {
+    margin: 2em;
+}
+
+/* Valid and invalid */
+
+input:invalid {
+    outline: 2px solid rgb(250, 2, 2)
+}
+
+
+input:valid {
+    border-bottom: 5px solid rgb(1, 134, 1);
+}
+
+.error-messeage {
+
+    color: rgb(145, 43, 43);
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+input:invalid+.error-messeage {
+    visibility: visible;
+
+}
+
+input:valid+.error-messeage {
+    visibility: hidden;
+}
+
+/* Valid and invalid */
+
+
+/* Rubrik */
+.heading-form {
+    grid-area: heading-form;
+
+    text-align: center;
+    align-self: center;
+    border-bottom: 0.3em solid var(--heading-line);
+
+    margin: 0;
+    margin-left: 32px;
+    margin-right: 32px;
+    font-size: 1.7em;
+}
+
+/* Rubrik */
+
+
+/* Person uppgifter */
+
+.form-personal-data {
+    grid-area: form-personal-data;
+    border: 0.1em solid var(--container-border-form-color);
+    text-align: center;
+    background: var(--container-color);
+    background: var(--conttainer-liner-gradient-color);
+    border-radius: 0.5em;
+
+}
+
+input {
+    font-size: 0.8em;
+    margin-top: 0.2em;
+    border-radius: 0.2em;
+}
+
+.form-personal-data__flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.1em;
+
+}
+
+.form-personal-data__flex>input {
+    width: 30em;
+    height: 3em;
+    transition: 0.3s;
+
+}
+
+.form-personal-data__flex--highlighted>input:focus {
+    box-shadow: var(--box-shadow);
+
+}
+
+/* Person uppgifter */
+
+
+/* Mat uppgifter*/
+.form-food__choose-food {
+    visibility: hidden;
+}
+
+input#food2:checked+.error-messeage+.form-food__choose-food {
+    visibility: visible;
+
+}
+
+
+.form-food {
+    grid-area: form-food;
+    border: 0.1em solid var(--container-border-form-color);
+    text-align: center;
+    background: var(--container-color);
+    background: var(--conttainer-liner-gradient-color);
+    border-radius: 0.5em;
+}
+
+
+.form-food__container>* {
+    margin-bottom: 1em;
+}
+
+.form-food>* {
+    margin-bottom: 1em;
+}
+
+.form-food__special-food-heading {
+    font-weight: bold;
+    margin-top: 2em;
+}
+
+.form-food__choose-food {
+    font-size: 1em;
+
+}
+
+select {
+    font-weight: bold;
+    background-color: transparent;
+    border: 0.2em solid rgb(7, 7, 7);
+    border-radius: 0.5em;
+    padding: 0 1em 0;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+select:hover {
+    box-shadow: inset var(--box-shadow-button);
+}
+
+option {
+    font-weight: bold;
+}
+
+/* Mat uppgifter */
+
+
+/* Biljett uppgifter */
+.form-ticket {
+
+    grid-area: form-ticket;
+    border: 0.1em solid var(--container-border-form-color);
+    text-align: center;
+    background: var(--container-color);
+    background: var(--conttainer-liner-gradient-color);
+    border-radius: 0.5em;
+}
+
+.form-ticket>* {
+    margin-bottom: 1em;
+}
+
+
+.form-ticket>hr {
+    height: 3px;
+    background-color: rgb(243, 243, 243);
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+
+}
+
+/* Biljett uppgifter */
+
+/* Knappar */
+.form__button-submit {
+    border: 0.1em solid var(--button-color);
+    background-color: var(--button-color);
+    color: var(--text-color-white);
+    border-radius: 10em;
+
+    width: 8em;
+    height: 2.5em;
+    font-size: 1.2em;
+    padding: 0.4em;
+    font-weight: bolder;
+    margin-top: 1em;
+    transition: 0.3s;
+}
+
+.form__button-submit:hover {
+    background-color: var(--button-color-white);
+    color: var(--button-color);
+    font-weight: bolder;
+    border: 0.1em solid var(--button-color);
+    box-shadow: var(--box-shadow-button);
+    cursor: pointer;
+}
+
+
+.form__button-reset--transparent {
+    background-color: transparent;
+    color: var(--text-color-white);
+    border-radius: 10em;
+
+    width: 5em;
+    height: 2.5em;
+    font-size: 1.2em;
+    padding: 0.4em;
+    font-weight: bolder;
+
+    transition: 0.3s;
+}
+
+.form__button-reset--transparent:hover {
+
+    box-shadow: var(--box-shadow-button);
+    cursor: pointer;
+}
+
+/* Knappar */
+
+
+fieldset {
+    border: none;
+
+}
+
+fieldset>* {
+    margin-bottom: 1.5em;
+}
+
+label {
+    font-size: 1.2em;
+
+}
+
+@media only screen and (max-width: 828px) and (min-width:745px) {
+    .form-personal-data__flex>input {
+        width: 19.8em;
+        height: 3em;
+        transition: 0.5s;
+
+    }
+}
+
+
+@media only screen and (max-width: 745px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "form"
+
+        ;
+
+
+    }
+
+
+    /* Person uppgifter */
+    .form-personal-data__flex>input {
+        width: 17em;
+        height: 3em;
+        transition: 0.5s;
+    }
+
+    label {
+        font-size: 1.1em;
+    }
+
+    /* Person uppgifter */
+
+
+    /* Valid and invalid */
+    .error-messeage {
+
+        color: rgb(145, 43, 43);
+        margin-left: 1em;
+        margin-right: 1em;
+        margin-bottom: 0em;
+    }
+
+    /* Valid and invalid */
+
+
+    /* Mat uppgifter */
+    .form-food__special-food-heading {
+        font-weight: bold;
+        margin-top: 0em;
+    }
+
+    /* Mat uppgifter */
+}

@@ -1,0 +1,194 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="boka-forum.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="root.css">
+
+    <link rel="icon" type="image/x-icon" href="/startsida img/Nytt projekt (5).png">
+    <title>Bättre webb</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="header-nav">
+
+            <a class="header-nav__logo" href="startsida.html"> Bättre Webb</a>
+
+            <section class="header-nav__gropued-buttons">
+
+                <a class="header-nav__button" href="./boka-forum.html"> Boka nu</a>
+
+                <a class="header-nav__button--none-background" href="./seminarier.html"> Seminarier</a>
+
+                <a class="header-nav__button--none-background" href="./startsida.html"> Startsida</a>
+            </section>
+        </nav>
+    </header>
+    <!-- Header -->
+
+    <main>
+
+        <section class="form">
+            <!-- Rubrik -->
+
+            <section class="heading-form">
+                <h1>Boka seminarie</h1>
+            </section>
+            <!-- Rubrik -->
+            <form action="#">
+
+
+                <!-- Person uppgifter -->
+
+                <section class="form-personal-data">
+
+                    <h2 class="form-personal-data__heading"> Person uppgifter:</h2>
+
+                    <div class="form-personal-data__flex form-personal-data__flex--highlighted">
+                        <label for="name">Namn:</label>
+                        <input type="name" placeholder="Namn" id="name" name="namn" required>
+                        <p class="error-messeage">Var vänligen att skriv in ditt namn</p>
+                        <br>
+                    </div>
+
+                    <div class="form-personal-data__flex form-personal-data__flex--highlighted">
+
+                        <label for="email">Email:</label>
+                        <input type="email" placeholder="Epost" id="email" name="epost" required>
+                        <p class="error-messeage">Var vänligen att skriv in din email</p>
+                        <br>
+                    </div>
+
+                    <div class="form-personal-data__flex form-personal-data__flex--highlighted">
+                        <label for="nummer">Mobilnummer:</label>
+                        <input type="nummer" placeholder="Nummer " id="nummer" name="nummer" minlength="8"
+                            maxlength="16" required>
+                        <p class="error-messeage">Var vänligen att skriv in ditt telefonummer</p>
+                        <br>
+                    </div>
+
+                    <div class="form-personal-data__flex form-personal-data__flex--highlighted">
+                        <label for="adress">Adress:</label>
+                        <input type="adress" placeholder="Adress" id="adress" name="adress" minlength="5" required>
+                        <p class="error-messeage">Var vänligen att skriv in ditt telefonummer</p>
+                        <br>
+                    </div>
+                </section>
+
+                <!-- Person uppgifter -->
+
+
+                <!-- Mat uppgifter -->
+                <br>
+                <section class="form-food">
+
+                    <h2 class="form-food__heading"> Mat och allergier</h2>
+
+                    <fieldset id="group-1">
+
+                        <label for="food1">Nej, Jag vill inte ha lunch under serminerier</label>
+                        <input type="radio" id="food1" name="group-1" value="fisk" required> <br>
+
+
+                        <label for="food2">Ja, jag vill ha lunch under seminariet</label>
+                        <input id="food2" type="radio" id="food2" name="group-1" value="kött">
+
+
+                        <p class="error-messeage">Var vänligen att välj ett av alternativen</p>
+
+                        <div class="form-food__choose-food">
+                            <label for="mat">Välj typ av maträtt:</label>
+                            <select name="mat" id="mat">
+                                <option value="kött">Välj mat rätt</option>
+                                <option value="kött">Kött</option>
+                                <option value="fisk">Fisk</option>
+                                <option value="vegitariskt">Vegitarisk</option> <br>
+                            </select>
+                    </fieldset>
+                    </div>
+                    <p class="form-food__special-food-heading">Vänligen skriv dina allergier här:</p>
+                    <textarea name="message" rows="10" cols="30"></textarea>
+
+                </section>
+
+                <!-- Mat uppgifter -->
+
+
+                <!-- Biljett uppgifter -->
+                <br>
+                <section class="form-ticket">
+
+                    <h2 class="form-ticket__haeding">Biljetter för seminariet</h2>
+
+                    <fieldset id="group-2">
+                        <label for="biljett1">Biljett för: 9/12 (200kr)</label>
+                        <input type="radio" id="biljett1" name="group-2" value="fisk" required> <br>
+
+
+
+
+                        <label for="biljett2">Biljett för: 10/12 (200kr)</label>
+                        <input type="radio" id="biljett2" name="group-2" value="fisk" required> <br>
+
+                        <label for="biljett3">Biljett för: 11/12 (250kr)</label>
+                        <input type="radio" id="biljett3" name="group-2" value="fisk" required> <br>
+
+
+                        <label for="biljett4">Biljett för hela seminariet: (500kr)</label>
+                        <input type="radio" id="biljett4" name="group-2" value="kött">
+
+
+                        <p class="error-messeage">Var vänligen att välj ett av alternativen</p>
+                    </fieldset>
+
+                    <hr>
+                    <label for="checkbox-1"> Ja, jag vill prenumerera på Bättre webb nyhetsbrev</label>
+                    <input type="checkbox" id="checkbox-1" name="checkbox-1"
+                        value="Biljett för hela seminariet: (500kr)"> <br>
+
+                    <!-- Biljett uppgifter -->
+
+                    <!-- Knappar -->
+                    <button class="form__button-submit" type="submit"> Boka nu</button>
+
+                    <button class=" form__button-reset--transparent" type="reset"> Avbryt</button>
+
+                    <!-- Knappar -->
+                </section>
+        </section>
+        </form>
+        </section>
+        </section>
+    </main>
+
+
+    <!-- footer -->
+
+    <footer>
+        <section class="footer-container">
+            <article class="footer-container__text">
+                <h1>Bättre webb.</h1>
+                <hr>
+                <p> Vi är ett företag som fokuserar på att skapa seminarier. </p>
+                <p> Vi har ett brett kontaktnät med branschens främsta programerare. </p>
+                <p> För mer frågor kontakta oss via mail: <u> battrewebb@gmail.com </u></p>
+            </article>
+
+
+            <section class="footer-container__logos">
+                <img src="./startsida img/instagram.png" alt="instagram">
+                <img src="./startsida img/facebook.png" alt="facebook">
+            </section>
+        </section>
+    </footer>
+
+    <!-- footer -->
+</body>
+</html>

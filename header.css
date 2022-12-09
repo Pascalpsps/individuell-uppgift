@@ -1,0 +1,120 @@
+header {
+
+    grid-area: header;
+    background-color: white;
+    border-bottom: 0.1em solid var(--text-box-line);
+
+
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+}
+
+
+
+.header-nav__button--none-background {
+
+    color: var(--text-color);
+    border-radius: 10em;
+    margin-right: 1em;
+    padding: 0.4em 1em;
+    font-size: 1.1em;
+    text-decoration: none;
+
+    font-weight: bolder;
+    transition: 0.3s;
+
+
+}
+
+.header-nav__button--none-background:hover {
+    color: var(--button-color);
+    cursor: pointer;
+}
+
+.header-nav__button {
+    border: 0.1em solid var(--button-color);
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    border-radius: 10em;
+    margin-right: 1em;
+    padding: 0.4em 1em;
+    font-size: 1.1em;
+    text-decoration: none;
+
+    font-weight: bolder;
+    transition: 0.3s;
+}
+
+
+
+.header-nav__button:hover {
+    background-color: var(--button-color-white);
+    color: var(--button-color);
+    font-weight: bolder;
+    border: 0.1em solid var(--button-color);
+    box-shadow: var(--box-shadow-button);
+    cursor: pointer;
+}
+
+
+
+.header-nav__logo {
+    font-size: 3em;
+    font-weight: bolder;
+    margin-left: 1em;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.header-nav__logo:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+
+@media only screen and (max-width: 849px) {
+
+    .header-nav {
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 1em;
+        gap: 1.2em;
+    }
+
+    .header-nav__logo {
+        font-size: 2.2em;
+        margin-left: 0;
+
+
+    }
+
+    .header-nav__button--none-background {
+        margin-right: 0em;
+        font-size: 1em;
+        padding: 0.5em 0.7em;
+
+
+
+    }
+
+    .header-nav__button {
+
+        font-size: 1em;
+
+        margin-right: 0em;
+        padding: 0.5em 0.7em;
+
+    }
+
+
+
+
+}

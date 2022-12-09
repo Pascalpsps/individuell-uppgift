@@ -1,0 +1,223 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    height: 250vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 7em 4fr 15em;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr 0.3fr;
+    grid-template-rows: 35em 30em 1fr;
+    grid-template-areas:
+        " hero-img hero-img hero-img "
+        ". info-container ."
+        " image-slide image-slide image-slide"
+
+    ;
+}
+
+
+/* Hero img  */
+
+.hero-image {
+    grid-area: hero-img;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.86), rgba(0, 0, 0, 0.004)), url(./startsida\ img/hero.jpg);
+
+    background-position: center;
+    background-size: cover;
+
+}
+
+
+.hero-image__heding {
+    color: var(--button-text-color);
+    background: var(--container-color);
+    background: var(--conttainer-liner-gradient-color);
+
+    padding: 1.5em;
+    text-align: center;
+
+}
+
+.hero-image__heding>p {
+    font-size: 1.2em;
+}
+
+/* Hero img  */
+
+
+/* info och knapp container  */
+
+.info-container {
+    grid-area: info-container;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    align-items: center;
+    gap: 1em;
+
+
+}
+
+.info-container__text {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.info-container__image>img {
+    width: 20em;
+    height: 15em;
+    border-radius: 0.6em;
+    border: 0.4em solid var(--border-img);
+}
+
+.info-container__button {
+    border: 0.1em solid var(--button-color);
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    border-radius: 10em;
+
+    padding: 0.4em 1em;
+    font-size: 1.1em;
+    text-decoration: none;
+
+    font-weight: bolder;
+    transition: 0.3s;
+}
+
+.info-container__button:hover {
+    background-color: var(--button-color-white);
+    color: var(--button-color);
+    font-weight: bolder;
+    border: 0.1em solid var(--button-color);
+    box-shadow: var(--box-shadow-button);
+    cursor: pointer;
+
+}
+
+/* info och knapp container  */
+
+
+/* Bilder container  */
+.image-container {
+    grid-area: image-slide;
+    background: var(--container-color);
+    background: var(--conttainer-liner-gradient-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+.image-container__img-1 {
+    background-image: url('./startsida img/3272512706.jpg');
+    width: 15em;
+    height: 15em;
+    color: var(--button-text-color);
+    background-size: cover;
+    text-align: center;
+    border-radius: 0.6em;
+    transition: 0.3s;
+}
+
+.image-container__img-2 {
+    background-image: url('./startsida img/491239_1280.jpg');
+    width: 15em;
+    height: 15em;
+    color: var(--button-text-color);
+    background-size: cover;
+    text-align: center;
+    border-radius: 0.6em;
+    transition: 0.3s;
+}
+
+.image-container__img-3 {
+    background-image: url('./startsida img/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.webp');
+    width: 15em;
+    height: 15em;
+    color: var(--button-text-color);
+    background-size: cover;
+    text-align: center;
+    border-radius: 0.6em;
+    transition: 0.3s;
+
+}
+
+.image-container__img--highlighted:hover {
+    box-shadow: var(--box-shadow);
+
+    transform: scale(1.05);
+}
+
+
+.image-container>figure>p {
+    color: var(--button-text-color);
+    background-color: var(--background-text-color);
+    text-align: center;
+    opacity: 0.85;
+
+}
+
+/* Bilder container   */
+
+
+@media only screen and (max-width: 910px) and (min-width: 754px) {
+
+
+    .info-container {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+@media only screen and (max-width: 754px) {
+
+
+    main {
+        grid-area: main;
+        display: grid;
+        grid-template-columns: 0.3fr 1fr 0.3fr;
+        grid-template-rows: 35em 23em 1fr;
+        grid-template-areas:
+            " hero-img hero-img hero-img "
+            "info-container info-container info-container"
+            " image-slide image-slide image-slide"
+
+        ;
+    }
+
+
+    /* info och knapp container  */
+
+    .info-container__image>img {
+        width: 15em;
+        height: 10em;
+
+
+    }
+
+    .info-container {
+        gap: 0em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* info och knapp container  */
+
+
+}
